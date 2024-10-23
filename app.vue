@@ -1,7 +1,7 @@
 <template>
-  <div class="max-w-[1440px] mx-auto">
+  <div class="max-w-[1440px] mx-auto font-inter">
     <Navbar />
-    <!--     <Hero /> -->
+    <Hero />
     <Services />
 
     <Expertise />
