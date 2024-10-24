@@ -2,7 +2,7 @@
   <DefaultGrid class="mt-28">
     <div class="lg:col-start-1 lg:col-end-7 relative flex justify-between">
       <div class="flex flex-col justify-between">
-        <h1 class="text-6xl font-semibold">Gemeinsam setzen wir dein Projekt um!</h1>
+        <h1 class="text-6xl font-semibold leading-[66px]">Gemeinsam setzen wir dein Projekt um!</h1>
         <h3 class="text-xl leading-10">Webseiten, die begeistern. Websoftware, die Prozesse optimiert. Web-Apps, die
           Wachstum beschleunigen.</h3>
         <button
