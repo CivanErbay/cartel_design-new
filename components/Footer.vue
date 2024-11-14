@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between w-full bg-[#13171D] py-9">
+  <div class="flex justify-between w-full py-9">
     <div clas="flex flex-col justify-center items-center">
       <h2 class="font-kodchasan text-2xl">
         Cartel Design
@@ -7,9 +7,9 @@
       <p class="text-sm opacity-30">© 2024 Alle Rechte vorbehalten.</p>
     </div>
     <div class="flex items-center justify-center">
-      <NuxtLink class="mr-4">AGB</NuxtLink>
-      <NuxtLink class="mr-4">Datenschutz</NuxtLink>
-      <NuxtLink>Impressum</NuxtLink>
+<!--       <NuxtLink class="mr-4 cursor-pointer">AGB</NuxtLink> -->
+      <NuxtLink to="/datenschutz" class="mr-8 cursor-pointer">Datenschutz</NuxtLink>
+      <NuxtLink to="/impressum" class="cursor-pointer">Impressum</NuxtLink>
     </div>
   </div>
 </template>
