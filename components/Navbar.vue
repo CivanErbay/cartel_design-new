@@ -43,7 +43,7 @@ const { data: header } = await fetchGlobalHandler('header');
 const links = [
   {
     title: 'Services',
-    url: '#services',
+    url: '/#services',
   },
   /*   {
     title: 'Expertise',
@@ -55,11 +55,11 @@ const links = [
   }, */
   {
     title: 'Cartel',
-    url: '#cartel',
+    url: '/#cartel',
   },
   {
     title: 'Kostenlose Beratung',
-    url: '#consultation',
+    url: '/#consultation',
   },
 ];
 </script>
