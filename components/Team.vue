@@ -23,18 +23,17 @@
         </p>
       </div>
       <div class="lg:col-start-10 lg:col-end-13 text-center">
-        <div class="flex flex-col justify-center items-center h-60 w-full mb-4 bg-[#282E38] rounded-xl">
-          <NuxtImg width="120" height="120" class="w-24 h-24 object-cover rounded-full"
-            src="/lena.png" />
+        <div class="flex flex-col justify-center items-center h-60 w-full mb-4 bg-[#282E38] rounded-xl bg-opacity-35">
+          <NuxtImg width="120" height="120" class="w-24 h-24 object-cover rounded-full" src="/lena.png" />
           <h4 class="mt-4 mb-0.5">Lena Rheinwalt</h4>
           <small class="opacity-30">Founder, Project Management & Marketing</small>
         </div>
-        <div class="flex flex-col justify-center items-center h-60 w-full mb-4 bg-[#282E38] rounded-xl">
+        <div class="flex flex-col justify-center items-center h-60 w-full mb-4 bg-[#282E38] rounded-xl bg-opacity-35">
           <NuxtImg width="120" height="120" class="w-24 h-24 object-cover rounded-full" src="/paco.png" />
           <h4 class="mt-4 mb-0.5">Francisco 'Paco' Muro</h4>
           <small class="opacity-30">Founder, Creative Technologist & Backend Developer</small>
         </div>
-        <div class="flex flex-col justify-center items-center h-60 w-full mb-4 bg-[#282E38] rounded-xl">
+        <div class="flex flex-col justify-center items-center h-60 w-full mb-4 bg-[#282E38] rounded-xl bg-opacity-35">
           <NuxtImg width="120" height="120" class="w-24 h-24 object-cover rounded-full" src="/civan.png" />
           <h4 class="mt-4 mb-0.5">Civan Erbay</h4>
           <small class="opacity-30">Founder & Full Stack Developer</small>
