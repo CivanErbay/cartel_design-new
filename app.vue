@@ -9,7 +9,7 @@
     <TechStack />
     <Team />
     <Consultation />
-
+    <CanvasWebGLCanvas />
   </div>
 </template>
 
