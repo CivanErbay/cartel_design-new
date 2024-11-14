@@ -7,7 +7,7 @@
         uns</span>
     </div>
     <div class="lg:col-start-4 lg:col-end-13">
-      <p class="leading-10 text-xl">
+      <p>
         Ihr habt eine spannende digitale Lösung im Kopf, und wir sorgen dafür, dass die Umsetzung nicht nur
         ansprechend
         aussieht, sondern auch begeisternd intuitiv ist. Gemeinsam mit euch gestalten und entwickeln wir als
