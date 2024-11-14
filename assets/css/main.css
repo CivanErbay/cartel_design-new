@@ -10,6 +10,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.font-kodchasan {
+  font-family: 'Kodchasan', sans-serif;
+}
+
 @layer base {
   body {
     background-color: #202d47;

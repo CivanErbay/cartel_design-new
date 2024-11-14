@@ -1,20 +1,13 @@
 <template>
-  <div class="max-w-[1440px] mx-auto font-inter tracking-wide lg:px-16">
+  <div class="relative mx-auto font-inter tracking-wide max-w-[1440px] lg:px-16 ">
     <Navbar />
     <Hero />
     <Text />
- <!-- <Services />
+    <!-- <Services />
     <Expertise /> -->
     <TechStack />
     <Team />
-    <Consultation />
-
+    <!--      <Consultation /> -->
+    <Footer />
   </div>
 </template>
-
-<style>
-/* Todo Delete */
-section {
-  height: 100vh;
-}
-</style>

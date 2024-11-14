@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-between items-center py-8">
-    <h2>Cartel Design</h2>
+    <h2 class="font-kodchasan text-2xl">Cartel Design</h2>
     <ul class="flex items-center gap-10">
       <li v-for="link in links">
         <a :href="link.url">{{ link.title }}</a>
