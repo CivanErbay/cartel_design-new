@@ -4,7 +4,7 @@
       <h2 class="font-kodchasan text-2xl">Cartel Design</h2>
     </NuxtLink>
     <ul class="flex items-center gap-10">
-      <li v-for="link in links">
+      <li v-for="(link, index) in links" :key="index">
         <a :href="link.url">{{ link.title }}</a>
       </li>
     </ul>
