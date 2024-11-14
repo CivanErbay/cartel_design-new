@@ -1,10 +1,12 @@
 <template>
-  <NuxtLoadingIndicator />
-  <Suspense>
-    <NuxtPage />
-  </Suspense>
+  <Hero />
+  <Text />
+  <!-- <Services />
+    <Expertise /> -->
+  <TechStack />
+  <Team />
+  <!-- <Consultation /> -->
+  <CanvasWebGLCanvas />
 </template>
 
-<script setup>
-
-</script>
+<script setup></script>
