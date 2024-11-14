@@ -3,9 +3,8 @@
     <Navbar />
     <Hero />
     <Text />
-    <Services />
-
-    <Expertise />
+ <!-- <Services />
+    <Expertise /> -->
     <TechStack />
     <Team />
     <Consultation />

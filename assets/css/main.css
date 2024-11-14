@@ -1,7 +1,6 @@
-body {
-  background-color: #202d47;
-  color: white;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .font-inter {
   font-family: 'Inter', sans-serif;
@@ -11,4 +10,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-
+@layer base {
+  body {
+    background-color: #202d47;
+    color: white;
+  }
+  p {
+    @apply text-xl leading-10;
+  }
+}

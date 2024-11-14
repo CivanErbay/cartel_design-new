@@ -37,14 +37,14 @@ const links = [
     title: 'Services',
     url: '#services'
   },
-  {
+/*   {
     title: 'Expertise',
     url: '#expertise'
   },
   {
     title: 'Leistungen',
     url: '#services'
-  },
+  }, */
   {
     title: 'Cartel',
     url: '#cartel'
