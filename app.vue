@@ -1,5 +1,7 @@
 <template>
-  <div class="relative mx-auto font-inter tracking-wide max-w-[1440px] lg:px-16 ">
+  <div
+    class="relative mx-auto font-inter tracking-wide max-w-[1440px] lg:px-16"
+  >
     <Navbar />
     <Hero />
     <Text />
@@ -7,7 +9,10 @@
     <Expertise /> -->
     <TechStack />
     <Team />
-    <!--      <Consultation /> -->
+    <!-- <Consultation /> -->
+    <CanvasWebGLCanvas />
     <Footer />
   </div>
 </template>
+
+<style></style>
