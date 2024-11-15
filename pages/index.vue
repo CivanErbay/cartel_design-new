@@ -5,7 +5,11 @@
     <Expertise /> -->
   <TechStack v-gsap-appear />
   <Team v-gsap-appear />
-  <UtilsFormRenderer v-if="formBlock" :form="formBlock.form" v-gsap-appear />
+  <div class="">
+    <h2>{{ formBlock.title }}</h2>
+    <UtilsSlateRenderer :html="formBlock.richtext" />
+    <UtilsFormRenderer v-if="formBlock" :form="formBlock.form" v-gsap-appear />
+  </div>
   <!-- <Consultation /> -->
   <CanvasWebGLCanvas />
 </template>

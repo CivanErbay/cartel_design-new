@@ -8,7 +8,9 @@
 </template>
 
 <script setup>
-const props = defineProps({ html: Array, style: String })
+import { slateToHtml } from '~/utlis/slateToHtml';
 
-const html = computed(() => slateToHtml(props.html))
+const props = defineProps({ html: Array, style: String });
+
+const html = computed(() => slateToHtml(props.html));
 </script>
