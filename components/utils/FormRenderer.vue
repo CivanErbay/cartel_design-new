@@ -42,7 +42,7 @@
       </div>
     </div>
     <div class="flex flex-col items-end mb-5 lg:mb-0">
-      <button class="mt-4 float-right -mr-6" @click="handleSubmit">
+      <button class="mt-4 mx-6 float-right" @click="handleSubmit">
         {{ form.submitButtonLabel }}
       </button>
       <SlateRenderer
