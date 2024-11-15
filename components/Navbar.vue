@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-between items-center py-8 px-5 lg:px-0">
     <NuxtLink to="/">
-      <h2 class="font-kodchasan text-2xl">Cartel Design</h2>
+      <h2 class="font-kodchasan text-2xl uppercase">Cartel Design</h2>
     </NuxtLink>
     <ul class="lg:flex items-center gap-10 hidden">
       <li v-for="link in links" :key="link.url">

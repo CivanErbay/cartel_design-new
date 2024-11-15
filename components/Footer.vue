@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col justify-between w-full py-9">
     <div clas="flex flex-col justify-center items-center">
-      <h2 class="font-kodchasan text-2xl text-center">
+      <h2 class="font-kodchasan text-2xl text-center uppercase">
         Cartel Design
       </h2>
       <p class="text-sm opacity-30 text-center mt-1">© 2024 Alle Rechte vorbehalten.</p>
