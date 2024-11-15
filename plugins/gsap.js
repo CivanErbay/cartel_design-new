@@ -1,6 +1,6 @@
 import { defineNuxtPlugin } from '#app';
-import gsapDirective from '../directives/gsap';
+import gsapAppearDirective from '../directives/gsap-appear';
 
 export default defineNuxtPlugin((nuxtApp) => {
-  nuxtApp.vueApp.directive('gsap', gsapDirective);
+  nuxtApp.vueApp.directive('gsap-appear', gsapAppearDirective);
 });
