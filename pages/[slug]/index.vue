@@ -7,7 +7,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
 const route = useRoute();
@@ -20,13 +20,12 @@ const queryPageBySlug = async (slug) => {
   return result;
 };
 
-onMounted(async () => {
-  const slug = route.params.slug || 'index';
-  page.value = await queryPageBySlug(slug);
-  if (!page.value) {
-    router.push('/404');
-  }
-});
+const slug = route.params.slug || 'index';
+console.log({ slug });
+page.value = await queryPageBySlug(slug);
+if (!page.value) {
+  // router.push('/404');
+}
 </script>
 
 <style lang="scss" scoped></style>
