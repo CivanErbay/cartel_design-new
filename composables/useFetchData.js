@@ -20,6 +20,5 @@ export const fetchCollectionHandler = async (collection, slug) => {
 
 export const fetchGlobalHandler = async (slug) => {
   const url = `${API_URL}/globals/${slug}`;
-  console.log(url);
   return await useFetch(url);
 };

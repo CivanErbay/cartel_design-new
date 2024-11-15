@@ -87,7 +87,7 @@ onMounted(() => {
     uniforms.uDeltaY.value = lerp(
       uniforms.uDeltaY.value,
       smoothedDeltaY * scrollEffectSpeed,
-      0.05
+      0.17
     );
     // console.log(uniforms.uDeltaY.value);
     // if (smoothedMousePos.x > 0.25) {
@@ -132,7 +132,7 @@ onMounted(() => {
     uDeltaY: { value: 0 },
     uAmplitude: { value: defuAmplitude },
     uFrequency: { value: new THREE.Vector2(3.0, 2.4) },
-    uColorFrequency: { value: new THREE.Vector2(0.5, 0.2) },
+    uColorFrequency: { value: new THREE.Vector2(0.5, 0.3) },
     uColorSpeed: { value: 0.02 },
     uColorSpeed2: { value: 0.7 },
     uColor: { value: palette },

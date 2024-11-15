@@ -38,14 +38,14 @@
 
 <script setup>
 const { data: header } = await fetchGlobalHandler('header');
-console.log(header);
+// console.log(header);
 
 const links = [
   {
     title: 'Services',
-    url: '#services',
+    url: '/#services',
   },
-/*   {
+  /*   {
     title: 'Expertise',
     url: '#expertise',
   },
@@ -55,11 +55,11 @@ const links = [
   }, */
   {
     title: 'Cartel',
-    url: '#cartel',
+    url: '/#cartel',
   },
   {
     title: 'Kostenlose Beratung',
-    url: '#consultation',
+    url: '/#consultation',
   },
 ];
 </script>
