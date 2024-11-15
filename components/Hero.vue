@@ -1,42 +1,28 @@
 <template>
-  <DefaultGrid class="mt-16 lg:mt-28 pb-44">
+  <DefaultGrid class="mt-16 lg:mt-28">
     <div class="lg:col-start-1 lg:col-end-7 relative flex justify-between">
       <div class="flex flex-col justify-between">
-        <h1 class="text-4xl lg:text-6xl font-semibold lg:leading-[66px]">
-          Gemeinsam setzen wir dein Projekt um!
-        </h1>
-        <h3 class="text-lg lg:text-xl my-8 leading-8 lg:leading-10">
-          Webseiten, die begeistern. Websoftware, die Prozesse optimiert.
-          Web-Apps, die Wachstum beschleunigen.
-        </h3>
+        <h1 class="text-4xl lg:text-6xl font-semibold lg:leading-[66px]">Gemeinsam setzen wir dein Projekt um!</h1>
+        <h3 class="text-lg lg:text-xl my-8 leading-8 lg:leading-10">Webseiten, die begeistern. Websoftware, die Prozesse optimiert. Web-Apps, die
+          Wachstum beschleunigen.</h3>
         <button
-          class="rounded-lg h-12 py-8 px-8 flex items-center w-fit bg-gradient-to-r from-fuchsia-800 to-sky-600"
-        >
-          Let's talk
+          class="rounded-lg h-12 py-8 px-8 flex items-center w-fit bg-gradient-to-r from-fuchsia-800 to-sky-600">Let's
+          talk
 
-          <svg
-            class="ml-2"
-            width="18"
-            height="15"
-            viewBox="0 0 18 15"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+          <svg class="ml-2" width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M15.3638 7.92447L9.96439 13.3239C9.72031 13.568 9.72031 13.9637 9.96439 14.2078C10.2085 14.4518 10.6042 14.4518 10.8483 14.2078L17.3134 7.74263C17.5575 7.49856 17.5575 7.10284 17.3134 6.85875L10.6895 0.183057C10.4454 -0.061019 10.0497 -0.061019 9.80561 0.183057C9.56153 0.427133 9.56153 0.822864 9.80561 1.06694L15.3614 6.67448L0.919392 6.67511C0.574207 6.67511 0.294388 6.95493 0.294388 7.30011C0.294401 7.64528 0.574221 7.9251 0.919392 7.92512L15.3638 7.92447Z"
-              fill="#FAFAFA"
-            />
+              fill="#FAFAFA" />
           </svg>
+
         </button>
       </div>
-    </div>
-    <NuxtImg
-      width="500"
-      height="500"
-      class="lg:col-start-8 lg:col-end-13 w-full h-96 object-cover rounded-lg mt-8"
-      src="/example1.png"
-    />
+    </div
+    <NuxtImg width="500" height="500" class="lg:col-start-8 lg:col-end-13 w-full h-96 object-cover rounded-lg mt-8"
+      src="/example1.png" />
   </DefaultGrid>
 </template>
 
-<script setup></script>
+<script setup>
+
+</script>
