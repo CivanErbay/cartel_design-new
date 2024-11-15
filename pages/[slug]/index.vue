@@ -24,7 +24,7 @@ const slug = route.params.slug || 'index';
 console.log({ slug });
 page.value = await queryPageBySlug(slug);
 if (!page.value) {
-  // router.push('/404');
+  router.push('/404');
 }
 </script>
 
