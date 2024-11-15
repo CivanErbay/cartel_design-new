@@ -49,8 +49,8 @@ onMounted(() => {
 
   let scrollSpeed = 0;
 
-  window.addEventListener('wheel', (event) => {
-    smoothedDeltaY += event.deltaY;
+  window.addEventListener('scroll', (event) => {
+    smoothedDeltaY = window.scrollY;
     // scrollSpeed += event.deltaY * 0.00003;
     // uniforms.uDeltaY.value -= scrollSpeed;
     // if (event.deltaY > 0) {
@@ -87,7 +87,7 @@ onMounted(() => {
     uniforms.uDeltaY.value = lerp(
       uniforms.uDeltaY.value,
       smoothedDeltaY * scrollEffectSpeed,
-      0.17
+      0.2
     );
     // console.log(uniforms.uDeltaY.value);
     // if (smoothedMousePos.x > 0.25) {
