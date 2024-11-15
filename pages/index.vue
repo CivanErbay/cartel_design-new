@@ -1,10 +1,10 @@
 <template>
   <Hero />
-  <Text />
+  <Text v-gsap />
   <!-- <Services />
     <Expertise /> -->
-  <TechStack />
-  <Team />
+  <TechStack v-gsap />
+  <Team v-gsap />
   <!-- <Consultation /> -->
   <CanvasWebGLCanvas />
 </template>

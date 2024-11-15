@@ -14,10 +14,11 @@
     "@nuxt/fonts": "^0.10.2",
     "@nuxt/image": "^1.8.1",
     "@nuxtjs/tailwindcss": "^6.12.2",
+    "gsap": "^3.12.5",
     "nuxt": "^3.13.2",
     "qs": "^6.13.0",
+    "three": "^0.169.0",
     "vue": "latest",
-    "vue-router": "latest",
-    "three": "^0.169.0"
+    "vue-router": "latest"
   }
 }
