@@ -18,8 +18,9 @@
   body {
     background-color: #202d47;
     color: white;
+    font-family: 'Inter', sans-serif;
   }
   p {
-    @apply text-xl leading-10;
+    @apply text-lg lg:text-xl my-8 leading-8 lg:leading-10;
   }
 }

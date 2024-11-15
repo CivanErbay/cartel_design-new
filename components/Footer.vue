@@ -1,10 +1,10 @@
 <template>
-  <div class="flex justify-between w-full py-9">
+  <div class="flex flex-col justify-between w-full py-9">
     <div clas="flex flex-col justify-center items-center">
-      <h2 class="font-kodchasan text-2xl">
+      <h2 class="font-kodchasan text-2xl text-center">
         Cartel Design
       </h2>
-      <p class="text-sm opacity-30">© 2024 Alle Rechte vorbehalten.</p>
+      <p class="text-sm opacity-30 text-center mt-1">© 2024 Alle Rechte vorbehalten.</p>
     </div>
     <div class="flex items-center justify-center">
 <!--       <NuxtLink class="mr-4 cursor-pointer">AGB</NuxtLink> -->

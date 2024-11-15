@@ -1,9 +1,9 @@
 <template>
-  <DefaultGrid class="mt-28">
+  <DefaultGrid class="mt-16 lg:mt-28">
     <div class="lg:col-start-1 lg:col-end-7 relative flex justify-between">
       <div class="flex flex-col justify-between">
-        <h1 class="text-6xl font-semibold leading-[66px]">Gemeinsam setzen wir dein Projekt um!</h1>
-        <h3 class="text-xl leading-10">Webseiten, die begeistern. Websoftware, die Prozesse optimiert. Web-Apps, die
+        <h1 class="text-4xl lg:text-6xl font-semibold lg:leading-[66px]">Gemeinsam setzen wir dein Projekt um!</h1>
+        <h3 class="text-lg lg:text-xl my-8 leading-8 lg:leading-10">Webseiten, die begeistern. Websoftware, die Prozesse optimiert. Web-Apps, die
           Wachstum beschleunigen.</h3>
         <button
           class="rounded-lg h-12 py-8 px-8 flex items-center w-fit bg-gradient-to-r from-fuchsia-800 to-sky-600">Let's
@@ -18,7 +18,7 @@
         </button>
       </div>
     </div>
-    <NuxtImg width="500" height="500" class="lg:col-start-8 lg:col-end-13 w-full h-96 object-cover rounded-lg"
+    <NuxtImg width="500" height="500" class="lg:col-start-8 lg:col-end-13 w-full h-96 object-cover rounded-lg mt-8"
       src="/example1.png" />
   </DefaultGrid>
 </template>

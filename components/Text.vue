@@ -3,8 +3,7 @@
 
     <div
       class="lg:col-start-2 lg:col-end-4 relative after:absolute after:-left-[110px] after:top-[11px] after:w-20 after:h-[2px] after:bg-gradient-to-r after:from-fuchsia-800 after:to-sky-600">
-      <span class="text-2xl">Über
-        uns</span>
+      <span class="text-2xl">Über uns</span>
     </div>
     <div class="lg:col-start-4 lg:col-end-13">
       <p>

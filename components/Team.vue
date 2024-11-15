@@ -2,8 +2,9 @@
   <section id="cartel">
     <DefaultGrid>
       <div class="lg:col-start-2 lg:col-end-9">
-        <h3 class="text-5xl mb-5">Gemeinsam setzen wir Dein Projekt um!</h3>
-        <p class="opacity-30 text-2xl mb-10 leading-10">Webseiten, die begeistern. Websoftware, die Prozesse optimiert.
+        <h3 class="mb-5 text-4xl lg:text-6xl font-semibold lg:leading-[66px]">Gemeinsam setzen wir Dein Projekt um!</h3>
+        <p class="opacity-30 text-lg lg:text-xl my-8 leading-8 lg:leading-10">Webseiten, die begeistern. Websoftware,
+          die Prozesse optimiert.
           Web-Apps, die Wachstum beschleunigen.</p>
         <p>
           Die Digitale Marketingagentur aus Berlin für die DACH-Region

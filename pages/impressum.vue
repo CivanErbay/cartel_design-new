@@ -1,6 +1,3 @@
-<script setup lang="ts">
-</script>
-
 <template>
   <div class="mt-6 text-sm">
     <p>Angaben gemäß § 5 TMG</p>

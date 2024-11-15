@@ -1,7 +1,7 @@
 <template>
-  <div class="flex justify-between items-center py-8">
+  <div class="flex justify-between items-center py-8 px-5 lg:px-0">
     <h2 class="font-kodchasan text-2xl">Cartel Design</h2>
-    <ul class="flex items-center gap-10">
+    <ul class="lg:flex items-center gap-10 hidden">
       <li v-for="link in links">
         <a :href="link.url">{{ link.title }}</a>
       </li>
@@ -12,7 +12,7 @@
       </div>
     </button> -->
     <button
-      class="h-12 w-fit mx-4 rounded-lg bg-gradient-to-r from-fuchsia-800 to-sky-600 p-0.5"
+      class="w-fit rounded-lg bg-gradient-to-r from-fuchsia-800 to-sky-600 p-0.5"
     >
       <div
         class="flex h-full rounded-lg w-full px-4 py-2 items-center justify-center bg-gray-800"
