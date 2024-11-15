@@ -5,7 +5,7 @@
     <Expertise /> -->
   <TechStack v-gsap-appear />
   <Team v-gsap-appear />
-  <div class="">
+  <div id="contact" class="">
     <h2>{{ formBlock.title }}</h2>
     <UtilsSlateRenderer :html="formBlock.richtext" />
     <UtilsFormRenderer v-if="formBlock" :form="formBlock.form" v-gsap-appear />
