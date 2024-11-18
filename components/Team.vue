@@ -2,8 +2,7 @@
   <section id="cartel">
     <DefaultGrid>
       <div class="lg:col-start-1 lg:col-end-8">
-        <h3 class="mb-5 lg:mb-1 text-4xl lg:text-6xl font-semibold lg:leading-[66px]">Das Cartel - Design trifft
-          Funktionalität</h3>
+        <h3 class="font-inter mb-5 lg:mb-1 text-4xl lg:text-6xl font-semibold lg:leading-[66px]">Das Cartel</h3>
         <!--   <p class="opacity-30 text-lg lg:text-xl my-8 lg:mb-6 lg:mt-0 leading-8 lg:leading-10">Design trifft
           Funktionalität</p> -->
         <p class="opacity-30 text-lg lg:text-xl my-8 lg:mb-6 lg:mt-0 leading-8 lg:leading-10">Ihr Partner für moderne
