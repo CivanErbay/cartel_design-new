@@ -27,7 +27,7 @@
     scroll-behavior: smooth;
   }
   body {
-    background-color: #202d47;
+    background-color: #111111;
     color: white;
     font-family: 'Inter', sans-serif;
   }
@@ -38,11 +38,7 @@
 
 .landing-grid {
   background-size: 100px 100px;
-  background-image: linear-gradient(
-      to right,
-      #6c63ff 1px,
-      transparent 1px
-    ),
+  background-image: linear-gradient(to right, #6c63ff 1px, transparent 1px),
     linear-gradient(to bottom, #6c63ff 1px, transparent 1px);
 }
 

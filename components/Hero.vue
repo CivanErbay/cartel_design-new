@@ -54,13 +54,34 @@
         </button> -->
       </div>
     </div>
-    <!-- <NuxtImg width="300" height="300"
-      class="lg:col-start-8 lg:col-end-13 h-72 rounded-lg mt-8 lg:mt-0" src="/void.svg" /> -->
   </DefaultGrid>
 </template>
 
 <script setup>
+import { ref, onMounted } from 'vue';
+import gsap from 'gsap';
 
+const heroContent = ref(null);
+
+onMounted(() => {
+  const element = heroContent.value;
+
+  // Set initial position to center of the screen
+  gsap.set(element, {
+    top: '30%',
+    position: 'fixed',
+  });
+
+  // Animate to natural position
+  gsap.to(element, {
+    duration: 2,
+    delay: 0.4,
+    top: 0,
+    opacity: 1,
+    position: 'absolute',
+    ease: 'power3.out',
+  });
+});
 </script>
 
 <style>
