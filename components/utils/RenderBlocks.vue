@@ -1,5 +1,5 @@
 <template>
-  <div v-if="hasBlocks">
+  <div>
     <div v-for="(block, index) in blocks" :key="index" class="my-16">
       <component
         :is="blockComponents[block.blockType]"
