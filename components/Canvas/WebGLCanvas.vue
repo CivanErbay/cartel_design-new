@@ -134,6 +134,7 @@ onMounted(() => {
     uColorSpeed: { value: 0.02 },
     uColorSpeed2: { value: 0.7 },
     uColor: { value: palette },
+    uSeed: { value: Math.random() * new Date().getTime() * 0.00001 },
   };
 
   const material = new THREE.ShaderMaterial({
@@ -144,6 +145,7 @@ onMounted(() => {
         uniform float uColorSpeed;
         uniform float uColorSpeed2;
         uniform float uDeltaY;
+        uniform float uSeed;
         uniform vec2 uFrequency;
         uniform vec2 uColorFrequency;
         uniform vec3 uColor[4];
@@ -252,7 +254,7 @@ onMounted(() => {
                     vec3(
                         noiseCoord.x*uColorFrequency.x+ uTime*noiseFlow,
                         noiseCoord.y*uColorFrequency.y+uDeltaY,
-                        (uTime*noiseSpeed + noiseSeed) * uColorSpeed2
+                        (uTime*noiseSpeed + noiseSeed + uSeed) * uColorSpeed2
                     )
                 );
                 vColor = mix(vColor, uColor[i], noise);

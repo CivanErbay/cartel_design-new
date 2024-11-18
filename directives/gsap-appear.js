@@ -14,10 +14,15 @@ export default {
       toggleActions = 'play none none none',
     } = binding.value || {};
 
+    const isInViewport =
+      el.getBoundingClientRect().top < window.innerHeight * 0.8;
+    const delay = isInViewport ? 1 : 0;
+
     gsap.from(el, {
       y,
       opacity,
       duration,
+      delay,
       scrollTrigger: {
         trigger: el,
         start,
