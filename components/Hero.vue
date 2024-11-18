@@ -20,29 +20,7 @@
           >
         </h1>
         <h2 class="text-3xl lg:text-8xl my-4 lg:my-16">trifft</h2>
-        <h2 class="text-3xl lg:text-8xl my-4 lg:my-16">Funktionalität</h2>
-        <h2 class="text-3xl lg:text-8xl my-4 lg:my-16">Webseiten,</h2>
-        <h2 class="text-3xl lg:text-8xl my-4 lg:my-16">die begeistern.</h2>
-      </div>
-    </div>
-    <div
-      class="hero-content w-full lg:col-start-1 lg:col-end-12 relative flex justify-between font-plex"
-    >
-      <div class="flex w-full flex-wrap justify-start text-justify gap-x-16">
-        <h1 class="lg:text-8xl text-6xl w-fit">
-          <span
-            class="bg-gradient-to-r from-sky-600 to-fuchsia-800 inline-block text-transparent bg-clip-text uppercase font-bold font-exo"
-            >Cartel</span
-          >
-          <br />
-          <span
-            class="uppercase bg-gradient-to-r from-fuchsia-800 to-sky-600 inline-block text-transparent bg-clip-text font-exo"
-          >
-            design</span
-          >
-        </h1>
-        <h2 class="text-3xl lg:text-8xl my-4 lg:my-16">trifft</h2>
-        <h2 class="text-3xl lg:text-8xl my-4 lg:my-16">Funktionalität</h2>
+        <h2 class="text-3xl lg:text-8xl my-4 lg:my-16">Funktionalität.</h2>
         <h2 class="text-3xl lg:text-8xl my-4 lg:my-16">Webseiten,</h2>
         <h2 class="text-3xl lg:text-8xl my-4 lg:my-16">die begeistern.</h2>
       </div>
@@ -61,17 +39,16 @@ onMounted(() => {
 
   // Set initial position to center of the screen
   gsap.set(element, {
-    top: '30%',
-    position: 'fixed',
+    y: '35%',
   });
 
   // Animate to natural position
   gsap.to(element, {
-    duration: 2,
-    delay: 0.4,
-    top: 0,
+    duration: 2.1,
+    delay: 0.3,
+    y: 0,
     opacity: 1,
-    position: 'absolute',
+    // position: 'absolute',
     ease: 'power3.out',
   });
 });
