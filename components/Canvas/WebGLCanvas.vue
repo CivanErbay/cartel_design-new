@@ -5,34 +5,29 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
 const canvas = ref(null);
 
 onMounted(() => {
   const scene = new THREE.Scene();
 
-  const camera = new THREE.PerspectiveCamera(30, 1, 0.1, 1000);
-  camera.position.set(0, 8, 0);
-
-  const controls = new OrbitControls(camera, canvas.value);
-  controls.enableDamping = true;
-  controls.dampingFactor = 0.25;
-  controls.screenSpacePanning = false;
-  controls.minDistance = 1;
-  controls.maxDistance = 500;
-  controls.maxPolarAngle = Math.PI / 2;
+  const camera = new THREE.OrthographicCamera(
+    window.innerWidth / -2,
+    window.innerWidth / 2,
+    window.innerHeight / 2,
+    window.innerHeight / -2,
+    0.1,
+    1000
+  );
+  camera.position.set(0, 0, 10); // Position the camera so it looks at the plane
+  camera.lookAt(0, 0, 0); // Ensure the camera is looking at the origin
 
   const renderer = new THREE.WebGLRenderer({ canvas: canvas.value });
   renderer.setPixelRatio(window.devicePixelRatio);
   renderer.setSize(window.innerWidth, window.innerHeight);
-  renderer.shadows = true;
-  renderer.physicallyCorrectLights = true;
-  renderer.outputColorSpace = THREE.SRGBColorSpace;
-  renderer.toneMapping = THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure = 3;
-  renderer.shadowMap.enabled = true;
-  renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+  // renderer.outputColorSpace = THREE.SRGBColorSpace;
+  // renderer.toneMapping = THREE.ACESFilmicToneMapping;
+  // renderer.toneMappingExposure = 3;
 
   window.addEventListener('resize', () => {
     camera.aspect = window.innerWidth / window.innerHeight;
@@ -42,7 +37,9 @@ onMounted(() => {
 
   let cameraPhase = 0;
   let smoothedDeltaY = 0;
-  let scrollEffectSpeed = -0.0003;
+  let deltaY = 0;
+  const deltaYSpeed = -0.0007;
+  const scrollEffectSpeed = -0.0003;
   let rotationSpeed = 0.0;
   let time = performance.now() * 0.01;
   const lookAtPoint = new THREE.Vector3(0, 0, 0);
@@ -83,10 +80,11 @@ onMounted(() => {
   };
 
   const updateUniforms = () => {
+    deltaY += deltaYSpeed;
     updateSmoothedMousePos();
     uniforms.uDeltaY.value = lerp(
       uniforms.uDeltaY.value,
-      smoothedDeltaY * scrollEffectSpeed,
+      smoothedDeltaY * scrollEffectSpeed + deltaY,
       0.2
     );
     // console.log(uniforms.uDeltaY.value);
@@ -127,12 +125,12 @@ onMounted(() => {
   const uniforms = {
     u_mouse: { value: { x: 0.0, y: 0.0 } },
     u_resolution: { value: { x: window.innerWidth, y: window.innerHeight } },
-    resolution: { value: new THREE.Vector2(1024, 1024) },
+    resolution: { value: new THREE.Vector2(1, 1) },
     uTime: { value: 0 },
     uDeltaY: { value: 0 },
     uAmplitude: { value: defuAmplitude },
     uFrequency: { value: new THREE.Vector2(3.0, 2.4) },
-    uColorFrequency: { value: new THREE.Vector2(0.5, 0.3) },
+    uColorFrequency: { value: new THREE.Vector2(0.4, 0.3) },
     uColorSpeed: { value: 0.02 },
     uColorSpeed2: { value: 0.7 },
     uColor: { value: palette },
@@ -283,9 +281,14 @@ onMounted(() => {
     `,
   });
 
-  const geometry = new THREE.PlaneGeometry(8, 8, 1024, 1024);
+  const geometry = new THREE.PlaneGeometry(
+    window.innerWidth,
+    window.innerHeight,
+    128,
+    128
+  );
   const parentGroup = new THREE.Group();
-  parentGroup.rotation.x = -Math.PI / 2;
+  parentGroup.position.set(0, 0, 0); // Position the plane at the origin
   const plane = new THREE.Mesh(geometry, material);
   parentGroup.add(plane);
   scene.add(parentGroup);
@@ -315,7 +318,7 @@ onMounted(() => {
   };
 
   // Add event listener for mousemove
-  window.addEventListener('mousemove', setMouseCoords);
+  // window.addEventListener('mousemove', setMouseCoords);
 });
 </script>
 
