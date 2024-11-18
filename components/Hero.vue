@@ -1,32 +1,27 @@
 <template>
   <DefaultGrid class="mt-8">
-    <div class="lg:col-start-1 lg:col-end-12 relative flex font-plex w-full ">
+    <div class="lg:col-start-1 lg:col-end-12 relative flex font-plex h-screen">
       <div ref="heroContent" class="hero-content flex flex-col justify-between text-justify">
-
+        <div class="loader">
+          <div data-glitch="Design" class="glitch font-exo font-bold">CARTEL</div>
+        </div>
         <!--  <h1 class="lg:text-9xl text-6xl"> -->
-        <ul class="lg:text-9xl text-6xl w-screen">
+        <!--   <h1 class="lg:text-9xl text-6xl">
 
-          <li>
-            <h2>
-              <span
-                class=" bg-gradient-to-r from-sky-600 to-fuchsia-800 inline-block text-transparent bg-clip-text uppercase font-bold font-exo">Cartel</span>
-              <br>
-              <span
-                class="uppercase bg-gradient-to-r from-fuchsia-800 to-sky-600 inline-block text-transparent bg-clip-text font-exo">
-                design</span>
 
-            </h2>
-          </li>
-          <li>trifft
-          </li>
-          <li> Funktionalität</li>
+
+          <span
+            class=" bg-gradient-to-r from-sky-600 to-fuchsia-800 inline-block text-transparent bg-clip-text uppercase font-bold font-exo">Cartel</span>
           <br>
+          <span
+            class="uppercase bg-gradient-to-r from-fuchsia-800 to-sky-600 inline-block text-transparent bg-clip-text font-exo">
+            design</span>
 
-          <li>Webseiten </li>
-          <li>die begeistern </li>
 
-          <li></li>
-        </ul>
+
+
+        </h1>
+ -->
         <!--    <span
           class=" bg-gradient-to-r from-sky-600 to-fuchsia-800 inline-block text-transparent bg-clip-text uppercase font-bold font-exo">Cartel</span>
         <br>
@@ -35,7 +30,7 @@
           design</span>
         trifft
         Funktionalität
-           </h1> 
+           </h1>
         <h2 class="text-lg lg:text-9xl my-16">Webseiten, die begeistern. <br> --> <!-- Websoftware, die
           Prozesse
           optimiert. <br> Web-Apps, die
@@ -85,5 +80,122 @@ onMounted(() => {
 <style>
 .hero-content {
   opacity: 0;
+}
+
+.glitch {
+  position: relative;
+  font-size: 280px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #fff;
+  letter-spacing: 5px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.glitch:before,
+.glitch:after {
+  display: block;
+  content: attr(data-glitch);
+  position: absolute;
+  top: 100px;
+/*   left: 130px; */
+  right: 0;
+  font-size: 380px;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -80px;
+}
+
+.glitch:before {
+  animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  color: #8b00ff;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.glitch:after {
+  animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+  color: #00e571;
+  opacity: 0.5;
+  z-index: -2;
+  /*   animation: shift 2s ease-in-out infinite alternate; */
+}
+
+.glitch:hover:before {
+  animation: shift 2.5s ease-in-out infinite alternate;
+}
+
+.glitch:hover:after {
+  animation: shift 0.5s ease-in-out infinite alternate;
+}
+
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+
+  20% {
+    transform: translate(-3px, 3px);
+  }
+
+  40% {
+    transform: translate(-3px, -3px);
+  }
+
+  60% {
+    transform: translate(3px, 3px);
+  }
+
+  80% {
+    transform: translate(3px, -3px);
+  }
+
+  to {
+    transform: translate(0);
+  }
+}
+
+@keyframes shift {
+
+  0%,
+  40%,
+  44%,
+  58%,
+  61%,
+  65%,
+  69%,
+  73%,
+  100% {
+    transform: skewX(0deg);
+  }
+
+  41% {
+    transform: skewX(10deg);
+  }
+
+  42% {
+    transform: skewX(-10deg);
+  }
+
+  59% {
+    transform: skewX(40deg) skewY(10deg);
+  }
+
+  60% {
+    transform: skewX(-40deg) skewY(-10deg);
+  }
+
+  63% {
+    transform: skewX(10deg) skewY(-5deg);
+  }
+
+  70% {
+    transform: skewX(-50deg) skewY(-20deg);
+  }
+
+  71% {
+    transform: skewX(10deg) skewY(-10deg);
+  }
 }
 </style>
