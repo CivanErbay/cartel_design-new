@@ -1,6 +1,6 @@
 <template>
   <DefaultGrid class="mt-8">
-    <div class="lg:col-start-1 lg:col-end-12 relative flex font-plex w-full">
+    <div class="lg:col-start-1 lg:col-end-12 relative flex font-plex w-full ">
       <div class="flex flex-col justify-between text-justify">
 
         <!--  <h1 class="lg:text-9xl text-6xl"> -->
@@ -58,60 +58,9 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
-import gsap from 'gsap';
 
-const heroContent = ref(null);
-
-onMounted(() => {
-  const element = heroContent.value;
-
-  // Set initial position to center of the screen
-  gsap.set(element, {
-    top: '30%',
-    position: 'fixed',
-  });
-
-  // Animate to natural position
-  gsap.to(element, {
-    duration: 2,
-    delay: 0.4,
-    top: 0,
-    opacity: 1,
-    position: 'absolute',
-    ease: 'power3.out',
-  });
-});
 </script>
 
 <style>
-ul {
-  padding: 16px;
-  cursor: default;
-}
 
-li {
-  list-style: none;
-  letter-spacing: 1px;
-  text-align: center;
-  white-space: nowrap;
-  width: 100%;
-  transition: width 2.8s ease;
-  animation: fadeIn 3s ease-out forwards;
-  animation-delay: 1250ms;
-}
-
-@keyframes fadeIn {
-  0% {
-    with: 100%
-  }
-
-  100% {
-    width: 0;
-  }
-}
-
-/* ul:hover>li {
-  width: 0;
-} */
 </style>
