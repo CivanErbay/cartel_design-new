@@ -1,7 +1,7 @@
 <template>
   <DefaultGrid class="mt-8">
     <div class="lg:col-start-1 lg:col-end-12 relative flex font-plex w-full ">
-      <div class="flex flex-col justify-between text-justify">
+      <div ref="heroContent" class="hero-content flex flex-col justify-between text-justify">
 
         <!--  <h1 class="lg:text-9xl text-6xl"> -->
         <ul class="lg:text-9xl text-6xl w-screen">
@@ -58,9 +58,32 @@
 </template>
 
 <script setup>
+import gsap from 'gsap'
 
+const heroContent = ref(null);
+
+onMounted(() => {
+  const element = heroContent.value;
+
+  // Set initial position to center of the screen
+  gsap.set(element, {
+    y: '35%',
+  });
+
+  // Animate to natural position
+  gsap.to(element, {
+    duration: 2.1,
+    delay: 0.3,
+    y: 0,
+    opacity: 1,
+    // position: 'absolute',
+    ease: 'power3.out',
+  });
+});
 </script>
 
 <style>
-
+.hero-content {
+  opacity: 0;
+}
 </style>
