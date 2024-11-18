@@ -43,6 +43,8 @@ onMounted(() => {
   let rotationSpeed = 0.0;
   let time = performance.now() * 0.01;
   const lookAtPoint = new THREE.Vector3(0, 0, 0);
+  const seed = Math.random() * new Date().getTime() * 0.00005;
+  console.log(seed);
 
   let scrollSpeed = 0;
 
@@ -134,7 +136,7 @@ onMounted(() => {
     uColorSpeed: { value: 0.02 },
     uColorSpeed2: { value: 0.7 },
     uColor: { value: palette },
-    uSeed: { value: Math.random() * new Date().getTime() * 0.00006 },
+    uSeed: { value: seed },
   };
 
   const material = new THREE.ShaderMaterial({
