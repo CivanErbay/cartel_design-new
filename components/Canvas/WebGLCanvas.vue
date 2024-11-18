@@ -284,8 +284,8 @@ onMounted(() => {
   const geometry = new THREE.PlaneGeometry(
     window.innerWidth,
     window.innerHeight,
-    256,
-    256
+    128,
+    128
   );
   const parentGroup = new THREE.Group();
   parentGroup.position.set(0, 0, 0); // Position the plane at the origin
