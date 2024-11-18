@@ -1,15 +1,20 @@
 <template>
   <Hero />
-  <TechStack v-gsap-appear />
-  <Text v-gsap-appear />
-  <!-- <Services />
+  <div class="max-w-[1440px] mx-auto">
+    <TechStack v-gsap-appear />
+    <Text v-gsap-appear />
+
+    <!-- <Services />
     <Expertise /> -->
 
-  <Team v-gsap-appear />
-  <!--   <BlocksForm id="contact" :formBlock="formBlock" v-gsap-appear /> -->
+    <Team v-gsap-appear />
+    <!--   <BlocksForm id="contact" :formBlock="formBlock" v-gsap-appear /> -->
 
-  <!-- <Consultation /> -->
-  <CanvasWebGLCanvas />
+    <!-- <Consultation /> -->
+    <!--     <CanvasWebGLCanvas /> -->
+  </div>
+  <div
+    class="absolute inset-0 landing-grid bottom-0z-[-1] [mask-image:radial-gradient(50%_20%_at_bottom,white,transparent)]" />
 </template>
 
 <script setup>
@@ -19,3 +24,5 @@ const { data } = await fetchCollectionHandler('pages', 'index');
   data.value.layout.find((block) => block.blockType === 'formBlock')
 ); */
 </script>
+
+<style></style>

@@ -1,13 +1,22 @@
 <template>
-  <DefaultGrid class="mt-16 lg:mt-28">
-    <div class="lg:col-start-1 lg:col-end-7 relative flex justify-between">
-      <div class="flex flex-col justify-between">
-        <h1 class="font-inter text-4xl lg:text-6xl font-semibold lg:leading-[66px]">Design trifft
-          Funktionalität</h1>
-        <h3 class="text-lg lg:text-xl my-8 leading-8 lg:leading-10">Webseiten, die begeistern. Websoftware, die Prozesse
-          optimiert. Web-Apps, die
-          Wachstum beschleunigen.</h3>
-        <button
+  <DefaultGrid class="mt-8">
+    <div class="lg:col-start-1 lg:col-end-12 relative flex justify-between font-plex">
+      <div class="flex flex-col justify-between text-justify">
+        <h1 class="lg:text-9xl text-6xl">
+          <span
+            class=" bg-gradient-to-r from-sky-600 to-fuchsia-800 inline-block text-transparent bg-clip-text uppercase font-bold font-exo">Cartel</span>
+            <br>
+          <span
+            class="uppercase bg-gradient-to-r from-fuchsia-800 to-sky-600 inline-block text-transparent bg-clip-text font-exo"> design</span>
+          trifft
+          Funktionalität
+        </h1>
+        <h2 class="text-lg lg:text-9xl my-16">Webseiten, die begeistern. <br> <!-- Websoftware, die
+          Prozesse
+          optimiert. <br> Web-Apps, die
+          Wachstum beschleunigen. --></h2>
+
+        <!--     <button
           class="rounded-lg h-12 py-8 px-8 flex items-center w-fit bg-gradient-to-r from-fuchsia-800 to-sky-600">Let's
           talk
 
@@ -17,11 +26,11 @@
               fill="#FAFAFA" />
           </svg>
 
-        </button>
+        </button> -->
       </div>
     </div>
-    <NuxtImg width="500" height="500"
-      class="lg:col-start-8 lg:col-end-13 w-full h-96 object-cover rounded-lg mt-8 lg:mt-0" src="/example1.png" />
+    <!-- <NuxtImg width="300" height="300"
+      class="lg:col-start-8 lg:col-end-13 h-72 rounded-lg mt-8 lg:mt-0" src="/void.svg" /> -->
   </DefaultGrid>
 </template>
 
