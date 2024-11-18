@@ -134,7 +134,7 @@ onMounted(() => {
     uColorSpeed: { value: 0.02 },
     uColorSpeed2: { value: 0.7 },
     uColor: { value: palette },
-    uSeed: { value: Math.random() * new Date().getTime() * 0.00001 },
+    uSeed: { value: Math.random() * new Date().getTime() * 0.00006 },
   };
 
   const material = new THREE.ShaderMaterial({
