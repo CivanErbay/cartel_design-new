@@ -12,22 +12,18 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue';
-import { useRoute } from 'vue-router';
+import Content from '../blocks/Content.vue';
+import Form from '../blocks/Form.vue';
 
 // Define your block components here
 const blockComponents = {
-  // Example:
-  // 'blockType1': BlockType1Component,
-  // 'blockType2': BlockType2Component,
+  content: Content,
+  form: Form,
 };
 
-const route = useRoute();
-const blocks = ref(route.params.blocks || []);
-
-const hasBlocks = computed(
-  () => blocks.value && Array.isArray(blocks.value) && blocks.value.length > 0
-);
+const props = defineProps({
+  blocks: Array,
+});
 </script>
 
 <style lang="scss" scoped></style>
