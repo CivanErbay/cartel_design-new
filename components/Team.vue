@@ -1,26 +1,28 @@
 <template>
   <section id="cartel">
     <DefaultGrid>
-      <div class="lg:col-start-2 lg:col-end-9">
-        <h3 class="mb-5 text-4xl lg:text-6xl font-semibold lg:leading-[66px]">Gemeinsam setzen wir Dein Projekt um!</h3>
-        <p class="opacity-30 text-lg lg:text-xl my-8 leading-8 lg:leading-10">Webseiten, die begeistern. Websoftware,
-          die Prozesse optimiert.
-          Web-Apps, die Wachstum beschleunigen.</p>
+      <div class="lg:col-start-1 lg:col-end-8">
+        <h3 class="mb-5 lg:mb-1 text-4xl lg:text-6xl font-semibold lg:leading-[66px]">Das Cartel - Design trifft
+          Funktionalität</h3>
+        <!--   <p class="opacity-30 text-lg lg:text-xl my-8 lg:mb-6 lg:mt-0 leading-8 lg:leading-10">Design trifft
+          Funktionalität</p> -->
+        <p class="opacity-30 text-lg lg:text-xl my-8 lg:mb-6 lg:mt-0 leading-8 lg:leading-10">Ihr Partner für moderne
+          Web-Lösungen</p>
         <p>
-          Die Digitale Marketingagentur aus Berlin für die DACH-Region
-          Space Rocket - ausgezeichnet aus über 2.500 Agenturen zur besten Webdesign-Agentur Deutschlands, steht seit
-          5
-          Jahren für herausragende Qualität und Service.
-          <br>
-          Unser Ansporn ist es, bei jeder von uns designten Website durch Präzision und Kreativität zu glänzen - so
-          entstehen für jeden Kunden einzigartige Websites. 
+          <span class="font-bold">Unsere Vision:</span> <br>
+          Die digitale Transformation aktiv vorantreiben und Unternehmen dabei unterstützen, sich modern
+          und zukunftssicher aufzustellen.
           <br> <br>
-          Diese Qualität überzeugt bereits über 1.000 Kunden. Egal ob Blue Chip Unternehmen oder das nette Restaurant
-          um
-          die Ecke - jeder liebt Space Rocket Websites. 
-          <br>
-          So werden Sie vom ersten Gespräch an professionell und mit Begeisterung beraten - bis auch Sie Ihre neue,
-          raketenhafte Website bestaunen dürfen.
+          <span class="font-bold">Unser Service:</span> <br>
+          Mit einem starken Fokus auf modernste Webtechnologien entwickeln wir maßgeschneiderte digitale Lösungen, die
+          sowohl optisch begeistern als auch funktional überzeugen. Egal ob individuelle Webseiten, leistungsstarke
+          Schnittstellen oder nahtlose Benutzererlebnisse – wir kombinieren Design und Entwicklung, um innovative und
+          nachhaltige Ergebnisse zu erzielen.
+          <br> <br>
+          <!-- Wir setzen auf aktuelle Technologien, um Performance, Skalierbarkeit und Benutzerfreundlichkeit auf höchstem
+          Niveau zu gewährleisten.  -->Gemeinsam gestalten wir Ihre digitale Zukunft – mit Leidenschaft, Präzision und
+          einem
+          klaren Blick.
         </p>
       </div>
       <div class="lg:col-start-10 lg:col-end-13 text-center">

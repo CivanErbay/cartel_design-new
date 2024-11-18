@@ -17,8 +17,8 @@
 
         </button>
       </div>
-    </div
-    <NuxtImg width="500" height="500" class="lg:col-start-8 lg:col-end-13 w-full h-96 object-cover rounded-lg mt-8"
+    </div>
+    <NuxtImg width="500" height="500" class="lg:col-start-8 lg:col-end-13 w-full h-96 object-cover rounded-lg mt-8 lg:mt-0"
       src="/example1.png" />
   </DefaultGrid>
 </template>

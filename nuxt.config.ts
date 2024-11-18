@@ -7,4 +7,10 @@ export default defineNuxtConfig({
   devServer: {
     port: process.env.VITE_ENVIRONMENT === 'dev' ? 3001 : 3000, // default to 3000 or 3001 if VITE_ENVIRONMENT is 'dev'
   },
+  fonts: {
+    defaults: {
+      weights: [400, 600, 900],
+      styles: ['normal', 'italic'],
+    },
+  }
 });

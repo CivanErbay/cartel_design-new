@@ -2,7 +2,7 @@
   <DefaultGrid class="items-center">
     <div
       class="lg:col-start-2 lg:col-end-6 relative after:absolute after:-left-[110px] after:top-[11px] after:w-20 after:h-[2px] after:bg-gradient-to-r after:from-fuchsia-800 after:to-sky-600">
-      <span class="text-2xl">Mit einem professionellen Tool-Stack setzen wir Dein Projekt um.</span>
+      <span class="text-2xl font-roboto">Von der Idee bis zur Umsetzung mit modernsten Webtechnologien</span>
     </div>
     <div class="lg:col-start-6 lg:col-end-13 flex flex-wrap gap-x-16 gap-y-8 my-8">
       <!-- Loop over the array of images -->
