@@ -1,20 +1,45 @@
 <template>
   <DefaultGrid class="mt-8">
-    <div class="lg:col-start-1 lg:col-end-12 relative flex justify-between font-plex">
+    <div class="lg:col-start-1 lg:col-end-12 relative flex font-plex w-full">
       <div class="flex flex-col justify-between text-justify">
-        <h1 class="lg:text-9xl text-6xl">
-          <span
-            class=" bg-gradient-to-r from-sky-600 to-fuchsia-800 inline-block text-transparent bg-clip-text uppercase font-bold font-exo">Cartel</span>
-            <br>
-          <span
-            class="uppercase bg-gradient-to-r from-fuchsia-800 to-sky-600 inline-block text-transparent bg-clip-text font-exo"> design</span>
-          trifft
-          Funktionalität
-        </h1>
-        <h2 class="text-lg lg:text-9xl my-16">Webseiten, die begeistern. <br> <!-- Websoftware, die
+
+        <!--  <h1 class="lg:text-9xl text-6xl"> -->
+        <ul class="lg:text-9xl text-6xl w-screen">
+
+          <li>
+            <h2>
+              <span
+                class=" bg-gradient-to-r from-sky-600 to-fuchsia-800 inline-block text-transparent bg-clip-text uppercase font-bold font-exo">Cartel</span>
+              <br>
+              <span
+                class="uppercase bg-gradient-to-r from-fuchsia-800 to-sky-600 inline-block text-transparent bg-clip-text font-exo">
+                design</span>
+
+            </h2>
+          </li>
+          <li>trifft
+          </li>
+          <li> Funktionalität</li>
+          <br>
+
+          <li>Webseiten </li>
+          <li>die begeistern </li>
+
+          <li></li>
+        </ul>
+        <!--    <span
+          class=" bg-gradient-to-r from-sky-600 to-fuchsia-800 inline-block text-transparent bg-clip-text uppercase font-bold font-exo">Cartel</span>
+        <br>
+        <span
+          class="uppercase bg-gradient-to-r from-fuchsia-800 to-sky-600 inline-block text-transparent bg-clip-text font-exo">
+          design</span>
+        trifft
+        Funktionalität
+           </h1> 
+        <h2 class="text-lg lg:text-9xl my-16">Webseiten, die begeistern. <br> --> <!-- Websoftware, die
           Prozesse
           optimiert. <br> Web-Apps, die
-          Wachstum beschleunigen. --></h2>
+          Wachstum beschleunigen. --><!-- </h2> -->
 
         <!--     <button
           class="rounded-lg h-12 py-8 px-8 flex items-center w-fit bg-gradient-to-r from-fuchsia-800 to-sky-600">Let's
@@ -37,3 +62,35 @@
 <script setup>
 
 </script>
+
+<style>
+ul {
+  padding: 16px;
+  cursor: default;
+}
+
+li {
+  list-style: none;
+  letter-spacing: 1px;
+  text-align: center;
+  white-space: nowrap;
+  width: 100%;
+  transition: width 2.8s ease;
+  animation: fadeIn 3s ease-out forwards;
+  animation-delay: 1250ms;
+}
+
+@keyframes fadeIn {
+  0% {
+    with: 100%
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+/* ul:hover>li {
+  width: 0;
+} */
+</style>

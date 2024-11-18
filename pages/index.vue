@@ -13,8 +13,8 @@
     <!-- <Consultation /> -->
     <!--     <CanvasWebGLCanvas /> -->
   </div>
-  <div
-    class="absolute inset-0 landing-grid bottom-0z-[-1] [mask-image:radial-gradient(50%_20%_at_bottom,white,transparent)]" />
+ <!--  <div
+    class="absolute inset-0 landing-grid bottom-0z-[-1] [mask-image:radial-gradient(50%_20%_at_bottom,white,transparent)]" /> -->
 </template>
 
 <script setup>
