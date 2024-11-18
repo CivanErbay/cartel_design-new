@@ -1,29 +1,32 @@
 <template>
   <DefaultGrid class="mt-8">
-    <div class="lg:col-start-1 lg:col-end-12 relative flex font-plex w-full ">
-      <div ref="heroContent" class="hero-content flex flex-col justify-between text-justify">
-
+    <div class="lg:col-start-1 lg:col-end-12 relative flex font-plex w-full">
+      <div
+        ref="heroContent"
+        class="hero-content flex flex-col justify-between text-justify"
+      >
         <!--  <h1 class="lg:text-9xl text-6xl"> -->
         <ul class="lg:text-9xl text-6xl w-screen">
-
           <li>
             <h2>
               <span
-                class=" bg-gradient-to-r from-sky-600 to-fuchsia-800 inline-block text-transparent bg-clip-text uppercase font-bold font-exo">Cartel</span>
-              <br>
+                class="bg-gradient-to-r from-sky-600 to-fuchsia-800 inline-block text-transparent bg-clip-text uppercase font-bold font-exo"
+                >Cartel</span
+              >
+              <br />
               <span
-                class="uppercase bg-gradient-to-r from-fuchsia-800 to-sky-600 inline-block text-transparent bg-clip-text font-exo">
-                design</span>
-
+                class="uppercase bg-gradient-to-r from-fuchsia-800 to-sky-600 inline-block text-transparent bg-clip-text font-exo"
+              >
+                design</span
+              >
             </h2>
           </li>
-          <li>trifft
-          </li>
-          <li> Funktionalität</li>
-          <br>
+          <li>trifft</li>
+          <li>Funktionalität</li>
+          <br />
 
-          <li>Webseiten </li>
-          <li>die begeistern </li>
+          <li>Webseiten</li>
+          <li>die begeistern</li>
 
           <li></li>
         </ul>
@@ -36,7 +39,8 @@
         trifft
         Funktionalität
            </h1> 
-        <h2 class="text-lg lg:text-9xl my-16">Webseiten, die begeistern. <br> --> <!-- Websoftware, die
+        <h2 class="text-lg lg:text-9xl my-16">Webseiten, die begeistern. <br> -->
+        <!-- Websoftware, die
           Prozesse
           optimiert. <br> Web-Apps, die
           Wachstum beschleunigen. --><!-- </h2> -->
@@ -58,7 +62,7 @@
 </template>
 
 <script setup>
-import gsap from 'gsap'
+import gsap from 'gsap';
 
 const heroContent = ref(null);
 
