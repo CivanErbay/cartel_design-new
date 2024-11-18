@@ -2,10 +2,10 @@
   <DefaultGrid class="mt-8">
     <div
       ref="heroContent"
-      class="hero-content lg:col-start-1 lg:col-end-12 relative flex justify-between font-plex"
+      class="hero-content w-full lg:col-start-1 lg:col-end-12 relative flex justify-between font-plex z-10"
     >
-      <div class="flex flex-col justify-between text-justify">
-        <h1 class="lg:text-9xl text-6xl">
+      <div class="flex w-full flex-wrap justify-start text-justify gap-x-16">
+        <h1 class="lg:text-9xl text-6xl w-fit">
           <span
             class="bg-gradient-to-r from-sky-600 to-fuchsia-800 inline-block text-transparent bg-clip-text uppercase font-bold font-exo"
             >Cartel</span
@@ -16,18 +16,18 @@
           >
             design</span
           >
-          trifft Funktionalität
         </h1>
-        <h2 class="text-lg lg:text-9xl my-16">
-          Webseiten, die begeistern. <br />
-        </h2>
+        <h2 class="text-lg lg:text-9xl my-16">trifft</h2>
+        <h2 class="text-lg lg:text-9xl my-16">Funktionalität</h2>
+        <h2 class="text-lg lg:text-9xl my-16">Webseiten,</h2>
+        <h2 class="text-lg lg:text-9xl my-16">die begeistern.</h2>
       </div>
     </div>
     <div
-      class="hero-content opacity-0 lg:col-start-1 lg:col-end-12 relative flex justify-between font-plex"
+      class="hero-content w-full lg:col-start-1 lg:col-end-12 relative flex justify-between font-plex z-10"
     >
-      <div class="flex flex-col justify-between text-justify">
-        <h1 class="lg:text-9xl text-6xl">
+      <div class="flex w-full flex-wrap justify-start text-justify gap-x-16">
+        <h1 class="lg:text-9xl text-6xl w-fit">
           <span
             class="bg-gradient-to-r from-sky-600 to-fuchsia-800 inline-block text-transparent bg-clip-text uppercase font-bold font-exo"
             >Cartel</span
@@ -38,11 +38,11 @@
           >
             design</span
           >
-          trifft Funktionalität
         </h1>
-        <h2 class="text-lg lg:text-9xl my-16">
-          Webseiten, die begeistern. <br />
-        </h2>
+        <h2 class="text-lg lg:text-9xl my-16">trifft</h2>
+        <h2 class="text-lg lg:text-9xl my-16">Funktionalität</h2>
+        <h2 class="text-lg lg:text-9xl my-16">Webseiten,</h2>
+        <h2 class="text-lg lg:text-9xl my-16">die begeistern.</h2>
       </div>
     </div>
   </DefaultGrid>
@@ -59,17 +59,18 @@ onMounted(() => {
 
   // Set initial position to center of the screen
   gsap.set(element, {
-    top: '50%',
+    top: '30%',
     position: 'fixed',
   });
 
   // Animate to natural position
   gsap.to(element, {
-    duration: 1.5,
+    duration: 2,
+    delay: 0.4,
     top: 0,
     opacity: 1,
     position: 'absolute',
-    ease: 'power1.out',
+    ease: 'power3.out',
   });
 });
 </script>
