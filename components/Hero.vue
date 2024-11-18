@@ -53,7 +53,7 @@
 </template>
 
 <script setup>
-import gsap from 'gsap'
+import gsap from 'gsap';
 
 const heroContent = ref(null);
 

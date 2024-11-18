@@ -22,4 +22,4 @@ export default {
     fill: ['hover', 'focus'],
   },
   plugins: [],
-}
+};
