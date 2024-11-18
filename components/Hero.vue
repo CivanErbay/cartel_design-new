@@ -4,8 +4,10 @@
       ref="heroContent"
       class="hero-content w-full lg:col-start-1 lg:col-end-12 relative flex justify-between font-plex z-10"
     >
-      <div class="flex w-full flex-wrap justify-start text-justify gap-x-16">
-        <h1 class="lg:text-9xl text-6xl w-fit">
+      <div
+        class="flex w-full flex-wrap justify-start items-end text-justify gap-x-4 lg:gap-x-10"
+      >
+        <h1 class="lg:text-8xl text-6xl w-fit">
           <span
             class="bg-gradient-to-r from-sky-600 to-fuchsia-800 inline-block text-transparent bg-clip-text uppercase font-bold font-exo"
             >Cartel</span
@@ -17,17 +19,17 @@
             design</span
           >
         </h1>
-        <h2 class="text-lg lg:text-9xl my-16">trifft</h2>
-        <h2 class="text-lg lg:text-9xl my-16">Funktionalität</h2>
-        <h2 class="text-lg lg:text-9xl my-16">Webseiten,</h2>
-        <h2 class="text-lg lg:text-9xl my-16">die begeistern.</h2>
+        <h2 class="text-3xl lg:text-8xl my-4 lg:my-16">trifft</h2>
+        <h2 class="text-3xl lg:text-8xl my-4 lg:my-16">Funktionalität</h2>
+        <h2 class="text-3xl lg:text-8xl my-4 lg:my-16">Webseiten,</h2>
+        <h2 class="text-3xl lg:text-8xl my-4 lg:my-16">die begeistern.</h2>
       </div>
     </div>
     <div
-      class="hero-content w-full lg:col-start-1 lg:col-end-12 relative flex justify-between font-plex z-10"
+      class="hero-content w-full lg:col-start-1 lg:col-end-12 relative flex justify-between font-plex"
     >
       <div class="flex w-full flex-wrap justify-start text-justify gap-x-16">
-        <h1 class="lg:text-9xl text-6xl w-fit">
+        <h1 class="lg:text-8xl text-6xl w-fit">
           <span
             class="bg-gradient-to-r from-sky-600 to-fuchsia-800 inline-block text-transparent bg-clip-text uppercase font-bold font-exo"
             >Cartel</span
@@ -39,10 +41,10 @@
             design</span
           >
         </h1>
-        <h2 class="text-lg lg:text-9xl my-16">trifft</h2>
-        <h2 class="text-lg lg:text-9xl my-16">Funktionalität</h2>
-        <h2 class="text-lg lg:text-9xl my-16">Webseiten,</h2>
-        <h2 class="text-lg lg:text-9xl my-16">die begeistern.</h2>
+        <h2 class="text-3xl lg:text-8xl my-4 lg:my-16">trifft</h2>
+        <h2 class="text-3xl lg:text-8xl my-4 lg:my-16">Funktionalität</h2>
+        <h2 class="text-3xl lg:text-8xl my-4 lg:my-16">Webseiten,</h2>
+        <h2 class="text-3xl lg:text-8xl my-4 lg:my-16">die begeistern.</h2>
       </div>
     </div>
   </DefaultGrid>
