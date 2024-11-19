@@ -1,42 +1,21 @@
 <template>
-  <DefaultGrid class="mt-8">
-    <div class="lg:col-start-1 lg:col-end-12 relative flex font-plex h-screen">
-      <div ref="heroContent" class="hero-content flex flex-col justify-between text-justify">
+  <DefaultGrid class="mt-36 w-full">
+    <div class="lg:col-start-1 lg:col-end-12 relative flex font-plex w-full">
+      <div ref="heroContent" class="hero-content flex flex-col w-full">
         <div class="loader">
-          <div data-glitch="Design" class="glitch font-exo font-bold">CARTEL</div>
+          <h2 data-glitch="Design" class="glitch font-exo font-bold">CARTEL</h2>
         </div>
-        <!--  <h1 class="lg:text-9xl text-6xl"> -->
-        <!--   <h1 class="lg:text-9xl text-6xl">
 
+        <!-- <p class="mt-44 text-3xl"> trifft
+          Funktionalität</p> -->
 
-
-          <span
-            class=" bg-gradient-to-r from-sky-600 to-fuchsia-800 inline-block text-transparent bg-clip-text uppercase font-bold font-exo">Cartel</span>
-          <br>
-          <span
-            class="uppercase bg-gradient-to-r from-fuchsia-800 to-sky-600 inline-block text-transparent bg-clip-text font-exo">
-            design</span>
-
-
-
-
-        </h1>
- -->
-        <!--    <span
-          class=" bg-gradient-to-r from-sky-600 to-fuchsia-800 inline-block text-transparent bg-clip-text uppercase font-bold font-exo">Cartel</span>
-        <br>
-        <span
-          class="uppercase bg-gradient-to-r from-fuchsia-800 to-sky-600 inline-block text-transparent bg-clip-text font-exo">
-          design</span>
-        trifft
-        Funktionalität
-           </h1>
-        <h2 class="text-lg lg:text-9xl my-16">Webseiten, die begeistern. <br> --> <!-- Websoftware, die
+      <!--   <p class="mt-36 text-7xl font-inter font-bold text-right"">trifft Funktionalität</p> -->
+        <!-- <h2 class=" text-lg lg:text-9xl my-16">Webseiten, die begeistern. <br> Websoftware, die
           Prozesse
           optimiert. <br> Web-Apps, die
           Wachstum beschleunigen. --><!-- </h2> -->
 
-        <!--     <button
+          <!--     <button
           class="rounded-lg h-12 py-8 px-8 flex items-center w-fit bg-gradient-to-r from-fuchsia-800 to-sky-600">Let's
           talk
 
@@ -84,7 +63,7 @@ onMounted(() => {
 
 .glitch {
   position: relative;
-  font-size: 280px;
+  font-size: 180px;
   font-weight: 600;
   line-height: 1.2;
   color: #fff;
@@ -99,11 +78,10 @@ onMounted(() => {
   content: attr(data-glitch);
   position: absolute;
   top: 100px;
-/*   left: 130px; */
-  right: 0;
-  font-size: 380px;
+  left: 110px;
+  font-size: 180px;
   font-family: 'Inter', sans-serif;
-  letter-spacing: -80px;
+  letter-spacing: -30px;
 }
 
 .glitch:before {

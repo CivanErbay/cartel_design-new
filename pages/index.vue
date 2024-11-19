@@ -1,8 +1,9 @@
 <template>
   <div>
-    <Hero />
-    <div class="max-w-[1440px] mx-auto">
-      <ContentSample />
+
+    <div class="max-w-[1440px] mx-auto font-host">
+      <Hero />
+      <ContentSample/>
       <TechStack v-gsap-appear />
       <Text v-gsap-appear />
 
