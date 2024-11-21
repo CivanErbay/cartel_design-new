@@ -5,6 +5,7 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import * as THREE from 'three';
+import { useNuxtApp } from '#app';
 
 const canvas = ref(null);
 
@@ -29,11 +30,13 @@ onMounted(() => {
   // renderer.toneMapping = THREE.ACESFilmicToneMapping;
   // renderer.toneMappingExposure = 3;
 
-  window.addEventListener('resize', () => {
+  const onWindowResize = () => {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
-  });
+  };
+
+  window.addEventListener('resize', onWindowResize);
 
   let cameraPhase = 0;
   let smoothedDeltaY = 0;
@@ -48,16 +51,11 @@ onMounted(() => {
 
   let scrollSpeed = 0;
 
-  window.addEventListener('scroll', (event) => {
+  const handleScroll = (event) => {
     smoothedDeltaY = window.scrollY;
-    // scrollSpeed += event.deltaY * 0.00003;
-    // uniforms.uDeltaY.value -= scrollSpeed;
-    // if (event.deltaY > 0) {
-    //   rotationSpeed = Math.abs(rotationSpeed);
-    // } else {
-    //   rotationSpeed = -Math.abs(rotationSpeed);
-    // }
-  });
+  };
+
+  window.addEventListener('scroll', handleScroll);
 
   const updateCameraPosition = () => {
     cameraPhase += scrollSpeed + rotationSpeed;
@@ -299,7 +297,7 @@ onMounted(() => {
 
   const animate = function () {
     time = performance.now() * 0.001;
-    requestAnimationFrame(animate);
+    animationFrameId = requestAnimationFrame(animate);
     uniforms.uTime.value = time * speed;
 
     // updateCameraPosition();
@@ -308,7 +306,7 @@ onMounted(() => {
     renderer.render(scene, camera);
   };
 
-  animate();
+  let animationFrameId = requestAnimationFrame(animate);
 
   const setMouseCoords = (event) => {
     const { clientX, clientY } = event;
@@ -323,6 +321,17 @@ onMounted(() => {
 
   // Add event listener for mousemove
   // window.addEventListener('mousemove', setMouseCoords);
+
+  const nuxtApp = useNuxtApp();
+  nuxtApp.hook('app:unmounted', () => {
+    cancelAnimationFrame(animationFrameId);
+    window.removeEventListener('resize', onWindowResize);
+    window.removeEventListener('scroll', handleScroll);
+    // window.removeEventListener('mousemove', onMouseMove);
+
+    renderer.dispose();
+    scene.dispose();
+  });
 });
 </script>
 
