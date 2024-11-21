@@ -28,7 +28,7 @@
           <input
             type="checkbox"
             v-model="formFields[name].value"
-            class="appearance-none flex-shrink-0 h-5 w-5 border-2 border-secondary rounded-none checked:bg-highlight cursor-pointer"
+            class="appearance-none flex-shrink-0 h-5 w-5 border-2 border-white rounded-none checked:bg-white cursor-pointer"
           />
           <label :for="name" class="ml-2">{{ formFields[name].label }}</label>
         </div>
