@@ -15,7 +15,7 @@ export default {
         '1.5xl': '1520px',
         '2xl': '1920px',
       },
-      colors: {},
+      colors: { primary: '#01FDC6' },
     },
   },
   variants: {

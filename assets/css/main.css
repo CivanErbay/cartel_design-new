@@ -10,8 +10,12 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.font-roboto-mono {
+  font-family: 'Roboto Mono', monospace;
+}
+
 .font-host {
-  font-family: "Host Grotesk", sans-serif;
+  font-family: 'Host Grotesk', sans-serif;
 }
 
 .font-exo {
@@ -27,9 +31,9 @@
     scroll-behavior: smooth;
   }
   body {
-    background-color: #111111;
+    background-color: #040404;
     color: white;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto Mono', monospace;
   }
   p {
     @apply text-lg lg:text-xl leading-8 lg:leading-10;
@@ -45,4 +49,15 @@
 .reverse div div {
   grid-auto-flow: dense;
   direction: rtl;
+}
+
+@layer utilities {
+  .outlined-text {
+    --outline-size: 4px;
+    text-shadow: calc(-1 * var(--outline-size)) calc(-1 * var(--outline-size)) 0
+        #000,
+      var(--outline-size) calc(-1 * var(--outline-size)) 0 #000,
+      calc(-1 * var(--outline-size)) var(--outline-size) 0 #000,
+      var(--outline-size) var(--outline-size) 0 #000; /* Outline color */
+  }
 }

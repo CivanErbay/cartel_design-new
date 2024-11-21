@@ -1,31 +1,28 @@
 <template>
-  <DefaultGrid class="mt-36 w-full">
-    <div class="lg:col-start-1 lg:col-end-12 relative flex font-plex w-full">
+  <DefaultGrid class="mt-24 w-full">
+    <div class="lg:col-start-1 lg:col-end-12 relative">
       <div ref="heroContent" class="hero-content flex flex-col w-full">
-        <div class="loader">
-          <h2 data-glitch="Design" class="glitch font-exo font-bold">CARTEL</h2>
+        <div
+          class="relative text-primary text-center outlined-text outline-1 outline-black text-[9rem] font-semibold"
+        >
+          <h1 class="z-10">CARTEL DESIGN</h1>
+          <!-- <h1
+            class="absolute inset-0"
+            :style="{
+              transform: `translate(${mouse.x * 0.02}px, ${mouse.y * 0.02}px)`,
+            }"
+          >
+            CARTEL DESIGN
+          </h1> -->
         </div>
-
-        <!-- <p class="mt-44 text-3xl"> trifft
-          Funktionalität</p> -->
-
-      <!--   <p class="mt-36 text-7xl font-inter font-bold text-right"">trifft Funktionalität</p> -->
-        <!-- <h2 class=" text-lg lg:text-9xl my-16">Webseiten, die begeistern. <br> Websoftware, die
-          Prozesse
-          optimiert. <br> Web-Apps, die
-          Wachstum beschleunigen. --><!-- </h2> -->
-
-          <!--     <button
-          class="rounded-lg h-12 py-8 px-8 flex items-center w-fit bg-gradient-to-r from-fuchsia-800 to-sky-600">Let's
-          talk
-
-          <svg class="ml-2" width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M15.3638 7.92447L9.96439 13.3239C9.72031 13.568 9.72031 13.9637 9.96439 14.2078C10.2085 14.4518 10.6042 14.4518 10.8483 14.2078L17.3134 7.74263C17.5575 7.49856 17.5575 7.10284 17.3134 6.85875L10.6895 0.183057C10.4454 -0.061019 10.0497 -0.061019 9.80561 0.183057C9.56153 0.427133 9.56153 0.822864 9.80561 1.06694L15.3614 6.67448L0.919392 6.67511C0.574207 6.67511 0.294388 6.95493 0.294388 7.30011C0.294401 7.64528 0.574221 7.9251 0.919392 7.92512L15.3638 7.92447Z"
-              fill="#FAFAFA" />
-          </svg>
-
-        </button> -->
+      </div>
+      <div
+        class="text-lg my-24 italic font-light text-center lg:text-6xl overflow-hidden w-full"
+      >
+        <h2 class="my-4 slogan-item">trifft</h2>
+        <h2 class="my-4 slogan-item">Funktionalität.</h2>
+        <h2 class="my-4 slogan-item">Webseiten,</h2>
+        <h2 class="my-4 slogan-item">die begeistern.</h2>
       </div>
     </div>
   </DefaultGrid>
@@ -36,8 +33,23 @@ import gsap from 'gsap';
 
 const heroContent = ref(null);
 
+const mouse = ref({ x: 0, y: 0 });
+
+const updateMousePosition = (event) => {
+  mouse.value = {
+    x: event.clientX,
+    y: event.clientY,
+  };
+};
+
+onUnmounted(() => {
+  window.removeEventListener('mousemove', updateMousePosition);
+});
+
 onMounted(() => {
+  window.addEventListener('mousemove', updateMousePosition);
   const element = heroContent.value;
+  let targets = gsap.utils.toArray('.slogan-item');
 
   // Set initial position to center of the screen
   gsap.set(element, {
@@ -46,12 +58,36 @@ onMounted(() => {
 
   // Animate to natural position
   gsap.to(element, {
-    duration: 2.1,
-    delay: 0.3,
+    duration: 2,
     y: 0,
     opacity: 1,
     // position: 'absolute',
     ease: 'power3.out',
+  });
+
+  // Animate each text element sequentially
+  targets.forEach((el, index) => {
+    gsap.fromTo(
+      el,
+      { x: '100%', opacity: 0 },
+      {
+        x: '0%',
+        opacity: 1,
+        duration: 1,
+        delay: 1 + index * 0.5,
+        ease: 'power3.out',
+        onComplete: () => {
+          // Loop animation
+          // gsap.to(el, {
+          //   x: '50%',
+          //   duration: 2,
+          //   repeat: -1,
+          //   yoyo: true,
+          //   ease: 'power1.inOut',
+          // });
+        },
+      }
+    );
   });
 });
 </script>
@@ -61,119 +97,7 @@ onMounted(() => {
   opacity: 0;
 }
 
-.glitch {
-  position: relative;
-  font-size: 180px;
-  font-weight: 600;
-  line-height: 1.2;
-  color: #fff;
-  letter-spacing: 5px;
-  z-index: 1;
-  cursor: pointer;
-}
-
-.glitch:before,
-.glitch:after {
-  display: block;
-  content: attr(data-glitch);
-  position: absolute;
-  top: 100px;
-  left: 110px;
-  font-size: 180px;
-  font-family: 'Inter', sans-serif;
-  letter-spacing: -30px;
-}
-
-.glitch:before {
-  animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
-  color: #8b00ff;
-  opacity: 0.8;
-  z-index: -1;
-}
-
-.glitch:after {
-  animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
-  color: #00e571;
-  opacity: 0.5;
-  z-index: -2;
-  /*   animation: shift 2s ease-in-out infinite alternate; */
-}
-
-.glitch:hover:before {
-  animation: shift 2.5s ease-in-out infinite alternate;
-}
-
-.glitch:hover:after {
-  animation: shift 0.5s ease-in-out infinite alternate;
-}
-
-
-@keyframes glitch {
-  0% {
-    transform: translate(0);
-  }
-
-  20% {
-    transform: translate(-3px, 3px);
-  }
-
-  40% {
-    transform: translate(-3px, -3px);
-  }
-
-  60% {
-    transform: translate(3px, 3px);
-  }
-
-  80% {
-    transform: translate(3px, -3px);
-  }
-
-  to {
-    transform: translate(0);
-  }
-}
-
-@keyframes shift {
-
-  0%,
-  40%,
-  44%,
-  58%,
-  61%,
-  65%,
-  69%,
-  73%,
-  100% {
-    transform: skewX(0deg);
-  }
-
-  41% {
-    transform: skewX(10deg);
-  }
-
-  42% {
-    transform: skewX(-10deg);
-  }
-
-  59% {
-    transform: skewX(40deg) skewY(10deg);
-  }
-
-  60% {
-    transform: skewX(-40deg) skewY(-10deg);
-  }
-
-  63% {
-    transform: skewX(10deg) skewY(-5deg);
-  }
-
-  70% {
-    transform: skewX(-50deg) skewY(-20deg);
-  }
-
-  71% {
-    transform: skewX(10deg) skewY(-10deg);
-  }
+.slogan-item {
+  opacity: 0;
 }
 </style>
