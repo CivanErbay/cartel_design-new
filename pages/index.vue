@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="max-w-[1440px] mx-auto">
+    <div class="mx-auto">
       <Hero />
       <SectionServices />
       <ContentSample />
