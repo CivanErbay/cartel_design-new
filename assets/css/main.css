@@ -2,19 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-.font-inter {
+/* .font-inter {
   font-family: 'Inter', sans-serif;
-}
+} */
 
-.font-roboto {
+/* .font-roboto {
   font-family: 'Roboto', sans-serif;
-}
+} */
 
 .font-roboto-mono {
   font-family: 'Roboto Mono', monospace;
 }
 
-.font-host {
+.font-lato {
+  font-family: 'Lato', monospace;
+}
+
+/* .font-host {
   font-family: 'Host Grotesk', sans-serif;
 }
 
@@ -24,7 +28,7 @@
 
 .font-plex {
   font-family: 'IBM Plex Mono', monospace;
-}
+} */
 
 @layer base {
   html {

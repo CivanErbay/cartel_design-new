@@ -3,7 +3,7 @@
     <div class="lg:col-start-1 lg:col-end-12 relative">
       <div ref="heroContent" class="hero-content flex flex-col w-full">
         <div
-          class="relative text-primary text-center outlined-text outline-1 outline-black text-[9rem] font-semibold"
+          class="relative text-primary font-lato text-center outlined-text outline-1 outline-black text-[9rem] font-semibold"
         >
           <h1 class="z-10">CARTEL DESIGN</h1>
           <!-- <h1
@@ -17,12 +17,13 @@
         </div>
       </div>
       <div
-        class="text-lg my-24 italic font-light text-center lg:text-6xl overflow-hidden w-full"
+        class="text-lg my-24 italic text-center lg:text-6xl overflow-hidden w-full"
       >
-        <h2 class="my-4 slogan-item">trifft</h2>
-        <h2 class="my-4 slogan-item">Funktionalität.</h2>
-        <h2 class="my-4 slogan-item">Webseiten,</h2>
-        <h2 class="my-4 slogan-item">die begeistern.</h2>
+        <h2 class="my-4 slogan-item font-light">Wachsende Businesses,</h2>
+        <h2 class="my-4 slogan-item font-light">kluge Ideen,</h2>
+        <h2 class="my-4 slogan-item font-light">komplizierte Prozesse,</h2>
+        <br />
+        <h2 class="my-4 slogan-item">brauchen DIGITALE ANWENDUNGEN</h2>
       </div>
     </div>
   </DefaultGrid>
