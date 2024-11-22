@@ -114,8 +114,8 @@ onMounted(() => {
   const mousePos = new THREE.Vector2(0, 0);
 
   const palette = [
-    new THREE.Color('#475D85'),
-    new THREE.Color('#653D8F'),
+    new THREE.Color('#5F7DBF'),
+    new THREE.Color('#231123'),
     new THREE.Color('#224244'),
     new THREE.Color('#3F548D'),
   ];

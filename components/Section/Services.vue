@@ -1,6 +1,6 @@
 <template>
   <div class="relative">
-    <DefaultGrid class="my-32 w-full overflow-x-hidden">
+    <DefaultGrid class="my-32 w-full">
       <div class="lg:col-start-1 lg:col-end-13 relative">
         <div class="w-full h-full flex flex-col items-center justify-center">
           <div

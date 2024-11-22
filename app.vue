@@ -2,14 +2,14 @@
   <div>
     <NuxtLoadingIndicator />
     <Suspense>
-      <div class="relative font-roboto-mono">
+      <div class="relative font-roboto-mono bg-black/75">
         <!-- <Navbar /> -->
         <NuxtPage />
         <Footer />
       </div>
     </Suspense>
 
-    <!-- <CanvasWebGLCanvas /> -->
+    <CanvasWebGLCanvas />
   </div>
 </template>
 
