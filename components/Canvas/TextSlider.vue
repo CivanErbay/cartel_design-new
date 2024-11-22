@@ -2,15 +2,15 @@
   <div class="w-full relative h-24 overflow-hidden py-24">
     <div id="no02" class="wrapper text-primary">
       <div class="boxes">
-        <div class="box">CARTELDESIGN</div>
+        <div class="box">CARTEL DESIGN</div>
         <div class="box">ES WIRD ALLES GUT</div>
-        <div class="box">CARTELDESIGN</div>
+        <div class="box">CARTEL DESIGN</div>
         <div class="box">ES WIRD ALLES GUT</div>
-        <div class="box">CARTELDESIGN</div>
+        <div class="box">CARTEL DESIGN</div>
         <div class="box">ES WIRD ALLES GUT</div>
-        <div class="box">CARTELDESIGN</div>
+        <div class="box">CARTEL DESIGN</div>
         <div class="box">ES WIRD ALLES GUT</div>
-        <div class="box">CARTELDESIGN</div>
+        <div class="box">CARTEL DESIGN</div>
         <div class="box">ES WIRD ALLES GUT</div>
       </div>
     </div>
