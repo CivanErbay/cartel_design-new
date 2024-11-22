@@ -3,8 +3,9 @@
     <DefaultGrid class="my-32 w-full">
       <div class="lg:col-start-1 lg:col-end-13 relative">
         <div class="w-full h-full flex flex-col items-center justify-center">
+          <!-- <div class="text-secondary mb-8">Clicken für mehr</div> -->
           <div
-            class="group flex flex-col items-center justify-center"
+            class="flex flex-col items-center justify-center"
             v-for="(service, i) in services"
             :key="i"
             v-gsap-appear
@@ -15,13 +16,20 @@
               @click="
                 selectedServiceIndex = selectedServiceIndex === i ? null : i
               "
-              class="relative"
+              class="relative mb-4"
             >
               <h2
-                class="text-primary uppercase text-8xl font-semibold mb-4 transition-all duration-200 hover:tracking-widest"
+                class="text-primary uppercase py-2 px-5 text-6xl mb-1 font-semibold transition-all duration-200 hover:tracking-widest"
               >
                 {{ service.label }}
               </h2>
+              <div
+                class="absolute border pointer-events-none inset-y-0 inset-x-1/2 transition-all -translate-x-1/2"
+                :class="{
+                  'border-primary w-full': hoveredServiceIndex === i,
+                  'border-transparent w-0': hoveredServiceIndex !== i,
+                }"
+              ></div>
               <div
                 class="absolute hidden lg:flex duration-200 max-w-[500px] top-0 h-full items-center text-secondary text-lg w-max right-full opacity-0 transition-all"
                 :class="{ 'opacity-100 mr-8': hoveredServiceIndex === i }"
@@ -34,10 +42,11 @@
               >
                 {{ service.floatingTextRight }}
               </div>
+              <div class="absolute top-full left-1/2 -translate-x-1/2"></div>
             </button>
 
             <div
-              class="transition-all overflow-hidden text-center duration-300 flex justify-center w-1/2 mx-24"
+              class="transition-all text-lg overflow-hidden text-center duration-300 flex justify-center w-1/2 mx-24"
               :class="{
                 'h-32': selectedServiceIndex === i,
                 // 'h-4': hoveredServiceIndex === i && selectedServiceIndex !== i,
