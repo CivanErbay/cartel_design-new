@@ -2,7 +2,7 @@
   <div>
     <NuxtLoadingIndicator />
     <Suspense>
-      <div class="relative font-roboto-mono bg-black/75">
+      <div class="relative font-roboto-mono bg-black/80">
         <!-- <Navbar /> -->
         <NuxtPage />
         <Footer />
