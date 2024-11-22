@@ -3,13 +3,15 @@
     <div id="no02" class="wrapper text-primary">
       <div class="boxes">
         <div class="box">CARTELDESIGN</div>
-        <div class="box">ESWIRDALLESGUT</div>
+        <div class="box">ES WIRD ALLES GUT</div>
         <div class="box">CARTELDESIGN</div>
-        <div class="box">ESWIRDALLESGUT</div>
+        <div class="box">ES WIRD ALLES GUT</div>
         <div class="box">CARTELDESIGN</div>
-        <div class="box">ESWIRDALLESGUT</div>
+        <div class="box">ES WIRD ALLES GUT</div>
         <div class="box">CARTELDESIGN</div>
-        <div class="box">ESWIRDALLESGUT</div>
+        <div class="box">ES WIRD ALLES GUT</div>
+        <div class="box">CARTELDESIGN</div>
+        <div class="box">ES WIRD ALLES GUT</div>
       </div>
     </div>
   </div>
@@ -23,7 +25,7 @@ onMounted(() => {
   gsap.set('.wrapper', { xPercent: 0, yPercent: 0 });
   const boxCount = gsap.utils.toArray('.box').length;
 
-  var boxWidth = 320,
+  var boxWidth = 370,
     totalWidth = boxWidth * boxCount, //  * n of boxes
     no02 = document.querySelectorAll('#no02 .box'),
     dirFromRight = '-=' + totalWidth;
@@ -81,16 +83,18 @@ onMounted(() => {
 }
 .wrapper .box {
   position: absolute;
-  width: 320px;
   height: 50px;
+  width: 370px;
   font-size: 40px;
   font-weight: 600;
   line-height: 50px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
 }
 .wrapper .boxes {
   position: relative;
-  left: -320px;
+  left: -370px;
   height: 50px;
 }
 </style>

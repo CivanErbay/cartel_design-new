@@ -46,7 +46,7 @@ onMounted(() => {
   let rotationSpeed = 0.0;
   let time = performance.now() * 0.01;
   const lookAtPoint = new THREE.Vector3(0, 0, 0);
-  const seed = 500 + Math.random() * new Date().getTime() * 0.000007;
+  const seed = 200 + Math.random() * new Date().getTime() * 0.000005;
   console.log(seed);
 
   let scrollSpeed = 0;

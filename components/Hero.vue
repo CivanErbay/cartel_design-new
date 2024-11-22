@@ -1,16 +1,12 @@
 <template>
-  <div
-    class="w-full transition-colors duration-300"
-    :class="{ 'bg-primary': !isScrolled, 'bg-transparent': isScrolled }"
-  >
+  <div class="w-full transition-colors duration-300">
     <DefaultGrid class="pt-12 pb-24 w-full">
       <div class="lg:col-start-1 lg:col-end-13 relative">
         <div ref="heroContent" class="hero-content flex flex-col w-full">
           <div
             class="relative text-center text-[9rem] font-semibold transition-colors duration-300"
-            :class="{ 'text-primary': isScrolled, 'text-black': !isScrolled }"
           >
-            <h1 class="font-lato">CARTEL DESIGN</h1>
+            <h1 class="font-lato text-primary">CARTEL DESIGN</h1>
             <!-- <h1
           class="absolute inset-0"
           :style="{
