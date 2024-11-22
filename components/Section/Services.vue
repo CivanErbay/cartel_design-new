@@ -4,16 +4,22 @@
       <div class="lg:col-start-1 lg:col-end-12 relative">
         <div class="w-full h-full flex flex-col items-center justify-center">
           <div class="relative group" v-for="(service, i) in services" :key="i">
-            <h2 class="text-primary uppercase text-8xl font-semibold mb-4">
+            <h2
+              @mouseenter="hoveredServiceIndex = i"
+              @mouseleave="hoveredServiceIndex = null"
+              class="text-primary uppercase text-8xl font-semibold mb-4 transition-all duration-200 hover:tracking-widest"
+            >
               {{ service.label }}
             </h2>
             <div
-              class="absolute top-0 h-full flex items-center mr-8 text-secondary text-lg w-max right-full opacity-0 group-hover:opacity-100 transition-all"
+              class="absolute duration-200 top-0 h-full flex items-center text-secondary text-lg w-max right-full opacity-0 transition-all"
+              :class="{ 'opacity-100 mr-8': hoveredServiceIndex === i }"
             >
               {{ service.floatingTextLeft }}
             </div>
             <div
-              class="absolute top-0 h-full flex items-center ml-8 text-secondary text-lg w-max left-full opacity-0 group-hover:opacity-100 transition-all"
+              class="absolute duration-200 top-0 h-full flex items-center text-secondary text-lg w-max left-full opacity-0 transition-all"
+              :class="{ 'opacity-100 ml-8': hoveredServiceIndex === i }"
             >
               {{ service.floatingTextRight }}
             </div>
@@ -25,6 +31,8 @@
 </template>
 
 <script setup>
+const hoveredServiceIndex = ref(null);
+
 const services = [
   {
     label: 'ux/ui design',
