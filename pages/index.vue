@@ -3,9 +3,9 @@
     <div class="mx-auto">
       <Hero />
       <SectionServices />
-      <ContentSample />
+      <ContentSample v-gsap-appear />
       <TechStack v-gsap-appear />
-      <Text v-gsap-appear />
+      <!-- <Text v-gsap-appear /> -->
 
       <Team v-gsap-appear />
       <!--   <BlocksForm id="contact" :formBlock="formBlock" v-gsap-appear /> -->

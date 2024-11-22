@@ -1,9 +1,13 @@
 <template>
   <DefaultGrid class="py-16">
-    <div class="flex flex-col lg:col-start-2 lg:col-end-8">
-      <h2 class="text-xl lg:text-5xl mb-4 lg:mb-12 font-bold">
-        Design trifft Funktionalität <br> von der Idee bis zur Umsetzung
-      </h2>
+    <div class="flex flex-col lg:col-start-3 lg:col-end-8">
+      <div class="mb-4 lg:mb-12">
+        <h3 class="text-xl lg:text-5xl font-bold mb-2">
+          Design trifft Funktionalität
+        </h3>
+        <h3 class="text-lg lg:text-3xl">von der Idee bis zur Umsetzung</h3>
+      </div>
+
       <p class="mb-4 tracking-wider">
         Egal ob individuelle Webseiten, leistungsstarke Schnittstellen oder
         nahtlose Benutzererlebnisse - wir kombinieren Design und Entwicklung, um
@@ -18,7 +22,6 @@
       <p>Webservices</p>
       <p>Label Design</p>
     </div>
-
   </DefaultGrid>
 </template>
 

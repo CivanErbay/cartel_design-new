@@ -1,9 +1,9 @@
 <template>
   <div
-    class="w-full transition-colors duration-300 pb-8"
+    class="w-full transition-colors duration-300"
     :class="{ 'bg-primary': !isScrolled, 'bg-transparent': isScrolled }"
   >
-    <DefaultGrid class="pt-24 w-full">
+    <DefaultGrid class="pt-24 pb-24 w-full">
       <div class="lg:col-start-1 lg:col-end-13 relative">
         <div ref="heroContent" class="hero-content flex flex-col w-full">
           <div

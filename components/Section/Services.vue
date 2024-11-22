@@ -1,9 +1,14 @@
 <template>
   <div class="relative">
-    <DefaultGrid class="mt-24 w-full min-h-screen overflow-hidden">
+    <DefaultGrid class="my-32 w-full overflow-hidden">
       <div class="lg:col-start-1 lg:col-end-12 relative">
         <div class="w-full h-full flex flex-col items-center justify-center">
-          <div class="relative group" v-for="(service, i) in services" :key="i">
+          <div
+            class="relative group"
+            v-for="(service, i) in services"
+            :key="i"
+            v-gsap-appear
+          >
             <h2
               @mouseenter="hoveredServiceIndex = i"
               @mouseleave="hoveredServiceIndex = null"
