@@ -3,7 +3,9 @@
     <div class="lg:col-start-3 lg:col-end-11">
       <div class="mb-12">
         <h3 class="text-xl lg:text-5xl mb-2">Von der Idee bis zur Umsetzung</h3>
-        <h3 class="text-lg lg:text-3xl">mit modernsten Webtechnologien</h3>
+        <h3 class="text-lg lg:text-3xl opacity-70">
+          mit modernsten Webtechnologien
+        </h3>
       </div>
       <div class="flex flex-wrap gap-x-16 gap-y-8 my-8">
         <!-- Loop over the array of images -->

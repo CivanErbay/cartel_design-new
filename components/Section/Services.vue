@@ -1,7 +1,7 @@
 <template>
   <div class="relative">
-    <DefaultGrid class="my-32 w-full overflow-hidden">
-      <div class="lg:col-start-1 lg:col-end-12 relative">
+    <DefaultGrid class="my-32 w-full overflow-x-hidden">
+      <div class="lg:col-start-1 lg:col-end-13 relative">
         <div class="w-full h-full flex flex-col items-center justify-center">
           <div
             class="relative group"
@@ -17,13 +17,13 @@
               {{ service.label }}
             </h2>
             <div
-              class="absolute duration-200 top-0 h-full flex items-center text-secondary text-lg w-max right-full opacity-0 transition-all"
+              class="absolute duration-200 max-w-[500px] top-0 h-full flex items-center text-secondary text-lg w-max right-full opacity-0 transition-all"
               :class="{ 'opacity-100 mr-8': hoveredServiceIndex === i }"
             >
               {{ service.floatingTextLeft }}
             </div>
             <div
-              class="absolute duration-200 top-0 h-full flex items-center text-secondary text-lg w-max left-full opacity-0 transition-all"
+              class="absolute duration-200 max-w-[500px] top-0 h-full flex items-center text-secondary text-lg w-max left-full opacity-0 transition-all"
               :class="{ 'opacity-100 ml-8': hoveredServiceIndex === i }"
             >
               {{ service.floatingTextRight }}
