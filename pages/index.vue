@@ -3,6 +3,7 @@
     <div class="mx-auto">
       <Hero />
       <SectionServices />
+      <CanvasTextSlider v-gsap-appear />
       <ContentSample v-gsap-appear />
       <TechStack v-gsap-appear />
       <!-- <Text v-gsap-appear /> -->
