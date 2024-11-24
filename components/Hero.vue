@@ -18,13 +18,13 @@
             </h1> -->
           </div>
         </div>
-        <div class="text-lg my-24 italic text-center lg:text-3xl overflow-hidden w-full">
+    <!--     <div class="text-lg my-24 italic text-center lg:text-3xl overflow-hidden w-full">
           <h2 class="my-4 slogan-item font-light">Wachsende Businesses,</h2>
           <h2 class="my-4 slogan-item font-light">kluge Ideen,</h2>
           <h2 class="my-4 slogan-item font-light">komplizierte Prozesse,</h2>
           <br />
           <h2 class="my-4 slogan-item">brauchen DIGITALE ANWENDUNGEN</h2>
-        </div>
+        </div> -->
       </div>
     </DefaultGrid>
   </div>
