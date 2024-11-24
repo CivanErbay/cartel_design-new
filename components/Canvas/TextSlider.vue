@@ -2,14 +2,43 @@
   <div class="w-full relative h-24 overflow-hidden py-24">
     <div id="no02" class="wrapper text-primary">
       <div class="boxes">
+        <div class="box">
+          <h2
+            class="before:content-['CARTELDESIGN'] before:absolute before:bottom-[3px] before:right-[20px] text-stroke-small">
+            CARTELDESIGN</h2>
+        </div>
+        <div class="box">
+          <h2
+            class="before:content-['CARTELDESIGN'] before:absolute before:bottom-[3px] before:right-[20px] text-stroke-small">
+            CARTELDESIGN</h2>
+        </div>
+        <div class="box">
+          <h2
+            class="before:content-['CARTELDESIGN'] before:absolute before:bottom-[3px] before:right-[20px] text-stroke-small">
+            CARTELDESIGN</h2>
+        </div>
+        <div class="box">
+          <h2
+            class="before:content-['CARTELDESIGN'] before:absolute before:bottom-[3px] before:right-[20px] text-stroke-small">
+            CARTELDESIGN</h2>
+        </div>
+        <div class="box">
+          <h2
+            class="before:content-['CARTELDESIGN'] before:absolute before:bottom-[3px] before:right-[20px] text-stroke-small">
+            CARTELDESIGN</h2>
+        </div>
+        <div class="box">
+          <h2
+            class="before:content-['CARTELDESIGN'] before:absolute before:bottom-[3px] before:right-[20px] text-stroke-small">
+            CARTELDESIGN</h2>
+        </div>
+        <!--   <div class="box">ESWIRDALLESGUT</div>
         <div class="box">CARTELDESIGN</div>
         <div class="box">ESWIRDALLESGUT</div>
         <div class="box">CARTELDESIGN</div>
         <div class="box">ESWIRDALLESGUT</div>
         <div class="box">CARTELDESIGN</div>
-        <div class="box">ESWIRDALLESGUT</div>
-        <div class="box">CARTELDESIGN</div>
-        <div class="box">ESWIRDALLESGUT</div>
+        <div class="box">ESWIRDALLESGUT</div> -->
       </div>
     </div>
   </div>
@@ -79,6 +108,7 @@ onMounted(() => {
   height: 50px;
   overflow: hidden;
 }
+
 .wrapper .box {
   position: absolute;
   width: 320px;
@@ -88,9 +118,14 @@ onMounted(() => {
   line-height: 50px;
   text-align: center;
 }
+
 .wrapper .boxes {
   position: relative;
   left: -320px;
   height: 50px;
+}
+
+.text-stroke-small {
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 </style>

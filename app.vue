@@ -9,7 +9,7 @@
       </div>
     </Suspense>
 
-    <CanvasWebGLCanvas />
+<!--     <CanvasWebGLCanvas /> -->
   </div>
 </template>
 

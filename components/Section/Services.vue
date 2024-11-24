@@ -3,29 +3,19 @@
     <DefaultGrid class="my-32 w-full">
       <div class="lg:col-start-1 lg:col-end-13 relative">
         <div class="w-full h-full flex flex-col items-center justify-center">
-          <div
-            class="relative group"
-            v-for="(service, i) in services"
-            :key="i"
-            v-gsap-appear
-          >
-            <h2
-              @mouseenter="hoveredServiceIndex = i"
-              @mouseleave="hoveredServiceIndex = null"
-              class="text-primary uppercase text-8xl font-semibold mb-4 transition-all duration-200 hover:tracking-widest"
-            >
+          <div class="relative group" v-for="(service, i) in services" :key="i" v-gsap-appear>
+            <h2 @mouseenter="hoveredServiceIndex = i" @mouseleave="hoveredServiceIndex = null"
+              class="text-primary uppercase text-8xl font-semibold transition-all duration-200 hover:tracking-widest cursor-pointer">
               {{ service.label }}
             </h2>
             <div
               class="absolute duration-200 max-w-[500px] top-0 h-full flex items-center text-secondary text-lg w-max right-full opacity-0 transition-all"
-              :class="{ 'opacity-100 mr-8': hoveredServiceIndex === i }"
-            >
+              :class="{ 'opacity-100 mr-8': hoveredServiceIndex === i }">
               {{ service.floatingTextLeft }}
             </div>
             <div
               class="absolute duration-200 max-w-[500px] top-0 h-full flex items-center text-secondary text-lg w-max left-full opacity-0 transition-all"
-              :class="{ 'opacity-100 ml-8': hoveredServiceIndex === i }"
-            >
+              :class="{ 'opacity-100 ml-8': hoveredServiceIndex === i }">
               {{ service.floatingTextRight }}
             </div>
           </div>
@@ -40,12 +30,12 @@ const hoveredServiceIndex = ref(null);
 
 const services = [
   {
-    label: 'ux/ui design',
+    label: 'uxdesign',
     floatingTextLeft: 'Das kann auch mein Kind',
     floatingTextRight: 'Ne brauch ich nicht',
   },
   {
-    label: 'web apps',
+    label: 'uidesign',
     floatingTextLeft: 'Es reicht doch mit Instagram',
     floatingTextRight: 'Ich bin schon bei EbayKleinanzeigen',
   },
@@ -72,6 +62,11 @@ const services = [
   },
   {
     label: 'templates',
+    floatingTextLeft: 'Was wenn ich das nicht kann?',
+    floatingTextRight: 'Ich will aber mein Content anders',
+  },
+  {
+    label: 'AI',
     floatingTextLeft: 'Was wenn ich das nicht kann?',
     floatingTextRight: 'Ich will aber mein Content anders',
   },

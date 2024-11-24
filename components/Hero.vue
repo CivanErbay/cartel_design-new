@@ -1,16 +1,13 @@
 <template>
-  <div
-    class="w-full transition-colors duration-300"
-    :class="{ 'bg-primary': !isScrolled, 'bg-transparent': isScrolled }"
-  >
+  <div class="w-full transition-colors duration-300">
     <DefaultGrid class="pt-12 pb-24 w-full">
       <div class="lg:col-start-1 lg:col-end-13 relative">
         <div ref="heroContent" class="hero-content flex flex-col w-full">
-          <div
-            class="relative text-center text-[9rem] font-semibold transition-colors duration-300"
-            :class="{ 'text-primary': isScrolled, 'text-black': !isScrolled }"
-          >
-            <h1 class="font-lato">CARTEL DESIGN</h1>
+          <div class="relative flex justify-center text-[9rem] font-semibold transition-colors duration-300">
+            <div class="relative w-fit">
+              <h2 class="before:content-['CARTELDESIGN'] before:absolute before:bottom-3 before:right-3 text-stroke">CARTELDESIGN</h2>
+            </div>
+
             <!-- <h1
           class="absolute inset-0"
           :style="{
@@ -21,9 +18,7 @@
             </h1> -->
           </div>
         </div>
-        <div
-          class="text-lg my-24 italic text-center lg:text-6xl overflow-hidden w-full"
-        >
+        <div class="text-lg my-24 italic text-center lg:text-3xl overflow-hidden w-full">
           <h2 class="my-4 slogan-item font-light">Wachsende Businesses,</h2>
           <h2 class="my-4 slogan-item font-light">kluge Ideen,</h2>
           <h2 class="my-4 slogan-item font-light">komplizierte Prozesse,</h2>
@@ -107,5 +102,9 @@ onMounted(() => {
 
 .slogan-item {
   opacity: 0;
+}
+
+.text-stroke {
+  text-shadow: -5px -5px 0 black, 5px -5px 0 black, -5px 5px 0 black, 5px 5px 0 black;
 }
 </style>
