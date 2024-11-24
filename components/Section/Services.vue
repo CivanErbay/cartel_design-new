@@ -30,12 +30,12 @@ const hoveredServiceIndex = ref(null);
 
 const services = [
   {
-    label: 'uxdesign',
+    label: 'ux/ui-design',
     floatingTextLeft: 'Das kann auch mein Kind',
     floatingTextRight: 'Ne brauch ich nicht',
   },
   {
-    label: 'uidesign',
+    label: 'website',
     floatingTextLeft: 'Es reicht doch mit Instagram',
     floatingTextRight: 'Ich bin schon bei EbayKleinanzeigen',
   },
@@ -51,7 +51,7 @@ const services = [
       'Ich habe ja immer Zeit, meine Dienstleistung nochmal zu erklären',
   },
   {
-    label: 'CMS',
+    label: 'cms',
     floatingTextLeft: 'Und wie ergänze ich meinen eigenes Website?',
     floatingTextRight: 'Ja es passt so änderungen brauche ich nicht',
   },
@@ -66,7 +66,7 @@ const services = [
     floatingTextRight: 'Ich will aber mein Content anders',
   },
   {
-    label: 'AI',
+    label: 'ai',
     floatingTextLeft: 'Was wenn ich das nicht kann?',
     floatingTextRight: 'Ich will aber mein Content anders',
   },

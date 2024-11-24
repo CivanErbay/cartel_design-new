@@ -4,32 +4,37 @@
       <div class="boxes">
         <div class="box">
           <h2
-            class="before:content-['CARTELDESIGN'] before:absolute before:bottom-[3px] before:right-[20px] text-stroke-small">
+            class="before:content-['CARTELDESIGN'] before:absolute before:bottom-[6px] before:right-[6px] text-stroke-small">
             CARTELDESIGN</h2>
         </div>
         <div class="box">
           <h2
-            class="before:content-['CARTELDESIGN'] before:absolute before:bottom-[3px] before:right-[20px] text-stroke-small">
+            class="before:content-['ESWIRDALLESGUT'] before:absolute before:bottom-[6px] before:right-[7px]  text-stroke-small">
+            ESWIRDALLESGUT</h2>
+        </div>
+        <div class="box">
+          <h2
+            class="before:content-['CARTELDESIGN'] before:absolute before:bottom-[6px] before:right-[6px] text-stroke-small">
             CARTELDESIGN</h2>
         </div>
         <div class="box">
           <h2
-            class="before:content-['CARTELDESIGN'] before:absolute before:bottom-[3px] before:right-[20px] text-stroke-small">
+            class="before:content-['ESWIRDALLESGUT'] before:absolute before:bottom-[6px] before:right-[7px]  text-stroke-small">
+            ESWIRDALLESGUT</h2>
+        </div>
+        <div class="box">
+          <h2
+            class="before:content-['CARTELDESIGN'] before:absolute before:bottom-[6px] before:right-[6px] text-stroke-small">
             CARTELDESIGN</h2>
         </div>
         <div class="box">
           <h2
-            class="before:content-['CARTELDESIGN'] before:absolute before:bottom-[3px] before:right-[20px] text-stroke-small">
-            CARTELDESIGN</h2>
+            class="before:content-['ESWIRDALLESGUT'] before:absolute before:bottom-[6px] before:right-[7px]  text-stroke-small">
+            ESWIRDALLESGUT</h2>
         </div>
         <div class="box">
           <h2
-            class="before:content-['CARTELDESIGN'] before:absolute before:bottom-[3px] before:right-[20px] text-stroke-small">
-            CARTELDESIGN</h2>
-        </div>
-        <div class="box">
-          <h2
-            class="before:content-['CARTELDESIGN'] before:absolute before:bottom-[3px] before:right-[20px] text-stroke-small">
+            class="before:content-['CARTELDESIGN'] before:absolute before:bottom-[6px] before:right-[6px] text-stroke-small">
             CARTELDESIGN</h2>
         </div>
         <!--   <div class="box">ESWIRDALLESGUT</div>
@@ -52,7 +57,7 @@ onMounted(() => {
   gsap.set('.wrapper', { xPercent: 0, yPercent: 0 });
   const boxCount = gsap.utils.toArray('.box').length;
 
-  var boxWidth = 320,
+  var boxWidth = 718,
     totalWidth = boxWidth * boxCount, //  * n of boxes
     no02 = document.querySelectorAll('#no02 .box'),
     dirFromRight = '-=' + totalWidth;
@@ -105,24 +110,24 @@ onMounted(() => {
   position: absolute;
   width: 100%;
   top: 0;
-  height: 50px;
+  /*   height: 80px; */
   overflow: hidden;
 }
 
 .wrapper .box {
   position: absolute;
-  width: 320px;
-  height: 50px;
-  font-size: 40px;
+  /*   width: 36px; */
+  /* height: 110px; */
+  font-size: 100px;
   font-weight: 600;
-  line-height: 50px;
+  /*   line-height: 50px; */
   text-align: center;
 }
 
 .wrapper .boxes {
   position: relative;
-  left: -320px;
-  height: 50px;
+  left: -36px;
+  height: 120px;
 }
 
 .text-stroke-small {
