@@ -2,16 +2,48 @@
   <div class="w-full relative h-24 overflow-hidden py-24">
     <div id="no02" class="wrapper text-primary">
       <div class="boxes">
-        <div class="box">CARTEL DESIGN</div>
-        <div class="box">ES WIRD ALLES GUT</div>
-        <div class="box">CARTEL DESIGN</div>
-        <div class="box">ES WIRD ALLES GUT</div>
-        <div class="box">CARTEL DESIGN</div>
-        <div class="box">ES WIRD ALLES GUT</div>
-        <div class="box">CARTEL DESIGN</div>
-        <div class="box">ES WIRD ALLES GUT</div>
-        <div class="box">CARTEL DESIGN</div>
-        <div class="box">ES WIRD ALLES GUT</div>
+        <div class="box">
+          <h2
+            class="before:content-['CARTELDESIGN'] before:absolute before:bottom-[6px] before:right-[6px] text-stroke-small">
+            CARTELDESIGN</h2>
+        </div>
+        <div class="box">
+          <h2
+            class="before:content-['ESWIRDALLESGUT'] before:absolute before:bottom-[6px] before:right-[7px]  text-stroke-small">
+            ESWIRDALLESGUT</h2>
+        </div>
+        <div class="box">
+          <h2
+            class="before:content-['CARTELDESIGN'] before:absolute before:bottom-[6px] before:right-[6px] text-stroke-small">
+            CARTELDESIGN</h2>
+        </div>
+        <div class="box">
+          <h2
+            class="before:content-['ESWIRDALLESGUT'] before:absolute before:bottom-[6px] before:right-[7px]  text-stroke-small">
+            ESWIRDALLESGUT</h2>
+        </div>
+        <div class="box">
+          <h2
+            class="before:content-['CARTELDESIGN'] before:absolute before:bottom-[6px] before:right-[6px] text-stroke-small">
+            CARTELDESIGN</h2>
+        </div>
+        <div class="box">
+          <h2
+            class="before:content-['ESWIRDALLESGUT'] before:absolute before:bottom-[6px] before:right-[7px]  text-stroke-small">
+            ESWIRDALLESGUT</h2>
+        </div>
+        <div class="box">
+          <h2
+            class="before:content-['CARTELDESIGN'] before:absolute before:bottom-[6px] before:right-[6px] text-stroke-small">
+            CARTELDESIGN</h2>
+        </div>
+        <!--   <div class="box">ESWIRDALLESGUT</div>
+        <div class="box">CARTELDESIGN</div>
+        <div class="box">ESWIRDALLESGUT</div>
+        <div class="box">CARTELDESIGN</div>
+        <div class="box">ESWIRDALLESGUT</div>
+        <div class="box">CARTELDESIGN</div>
+        <div class="box">ESWIRDALLESGUT</div> -->
       </div>
     </div>
   </div>
@@ -25,7 +57,7 @@ onMounted(() => {
   gsap.set('.wrapper', { xPercent: 0, yPercent: 0 });
   const boxCount = gsap.utils.toArray('.box').length;
 
-  var boxWidth = 370,
+  var boxWidth = 718,
     totalWidth = boxWidth * boxCount, //  * n of boxes
     no02 = document.querySelectorAll('#no02 .box'),
     dirFromRight = '-=' + totalWidth;
@@ -78,23 +110,27 @@ onMounted(() => {
   position: absolute;
   width: 100%;
   top: 0;
-  height: 50px;
+  /*   height: 80px; */
   overflow: hidden;
 }
+
 .wrapper .box {
   position: absolute;
-  height: 50px;
-  width: 370px;
-  font-size: 40px;
+  /*   width: 36px; */
+  /* height: 110px; */
+  font-size: 100px;
   font-weight: 600;
-  line-height: 50px;
-  display: flex;
-  justify-content: center;
-  white-space: nowrap;
+  /*   line-height: 50px; */
+  text-align: center;
 }
+
 .wrapper .boxes {
   position: relative;
-  left: -370px;
-  height: 50px;
+  left: -36px;
+  height: 120px;
+}
+
+.text-stroke-small {
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 </style>

@@ -3,57 +3,20 @@
     <DefaultGrid class="my-32 w-full">
       <div class="lg:col-start-1 lg:col-end-13 relative">
         <div class="w-full h-full flex flex-col items-center justify-center">
-          <!-- <div class="text-secondary mb-8">Clicken für mehr</div> -->
-          <div
-            class="flex flex-col items-center justify-center"
-            v-for="(service, i) in services"
-            :key="i"
-            v-gsap-appear
-          >
-            <button
-              @mouseenter="hoveredServiceIndex = i"
-              @mouseleave="hoveredServiceIndex = null"
-              @click="
-                selectedServiceIndex = selectedServiceIndex === i ? null : i
-              "
-              class="relative mb-4"
-            >
-              <h2
-                class="text-primary uppercase py-2 px-5 text-6xl mb-1 font-semibold transition-all duration-200 hover:tracking-widest"
-              >
-                {{ service.label }}
-              </h2>
-              <div
-                class="absolute border pointer-events-none inset-y-0 inset-x-1/2 transition-all -translate-x-1/2"
-                :class="{
-                  'border-primary w-full': hoveredServiceIndex === i,
-                  'border-transparent w-0': hoveredServiceIndex !== i,
-                }"
-              ></div>
-              <div
-                class="absolute hidden lg:flex duration-200 max-w-[500px] top-0 h-full items-center text-secondary text-lg w-max right-full opacity-0 transition-all"
-                :class="{ 'opacity-100 mr-8': hoveredServiceIndex === i }"
-              >
-                {{ service.floatingTextLeft }}
-              </div>
-              <div
-                class="absolute duration-200 max-w-[500px] top-0 h-full hidden lg:flex items-center text-secondary text-lg w-max left-full opacity-0 transition-all"
-                :class="{ 'opacity-100 ml-8': hoveredServiceIndex === i }"
-              >
-                {{ service.floatingTextRight }}
-              </div>
-              <div class="absolute top-full left-1/2 -translate-x-1/2"></div>
-            </button>
-
+          <div class="relative group" v-for="(service, i) in services" :key="i" v-gsap-appear>
+            <h2 @mouseenter="hoveredServiceIndex = i" @mouseleave="hoveredServiceIndex = null"
+              class="text-primary uppercase text-8xl font-semibold transition-all duration-200 hover:tracking-widest cursor-pointer">
+              {{ service.label }}
+            </h2>
             <div
-              class="transition-all text-lg overflow-hidden text-center duration-300 flex justify-center w-1/2 mx-24"
-              :class="{
-                'h-32': selectedServiceIndex === i,
-                // 'h-4': hoveredServiceIndex === i && selectedServiceIndex !== i,
-                'h-0': selectedServiceIndex !== i,
-              }"
-            >
-              {{ service.description }}
+              class="absolute duration-200 max-w-[500px] top-0 h-full flex items-center text-secondary text-lg w-max right-full opacity-0 transition-all"
+              :class="{ 'opacity-100 mr-8': hoveredServiceIndex === i }">
+              {{ service.floatingTextLeft }}
+            </div>
+            <div
+              class="absolute duration-200 max-w-[500px] top-0 h-full flex items-center text-secondary text-lg w-max left-full opacity-0 transition-all"
+              :class="{ 'opacity-100 ml-8': hoveredServiceIndex === i }">
+              {{ service.floatingTextRight }}
             </div>
           </div>
         </div>
@@ -68,14 +31,14 @@ const selectedServiceIndex = ref(null);
 
 const services = [
   {
-    label: 'ux/ui design',
+    label: 'ux/ui-design',
     floatingTextLeft: 'Das kann auch mein Kind',
     floatingTextRight: 'Ne brauch ich nicht',
     description:
       'Benutzererfahrung, die begeistert. Wir gestalten intuitive Benutzeroberflächen (UI) und optimieren die Nutzererfahrung (UX), damit Ihre digitalen Produkte nicht nur funktional, sondern auch ansprechend und benutzerfreundlich sind.',
   },
   {
-    label: 'web apps',
+    label: 'website',
     floatingTextLeft: 'Es reicht doch mit Instagram',
     floatingTextRight: 'Ich bin schon bei EbayKleinanzeigen',
     description:
@@ -97,7 +60,7 @@ const services = [
       'Inhalte, die ankommen. Ob Texte, Bilder oder Videos – wir erstellen hochwertige Inhalte, die Ihre Marke repräsentieren und Ihre Botschaft klar vermitteln.',
   },
   {
-    label: 'CMS',
+    label: 'cms',
     floatingTextLeft: 'Und wie ergänze ich meinen eigenes Website?',
     floatingTextRight: 'Ja es passt so änderungen brauche ich nicht',
     description:
@@ -116,6 +79,11 @@ const services = [
     floatingTextRight: 'Ich will aber mein Content anders',
     description:
       'Individuelle Vorlagen für Ihren Erfolg. Professionell designte Website- und E-Mail-Templates, die genau auf Ihre Marke und Ihre Anforderungen abgestimmt sind.',
+  },
+  {
+    label: 'ai',
+    floatingTextLeft: 'Was wenn ich das nicht kann?',
+    floatingTextRight: 'Ich will aber mein Content anders',
   },
 ];
 </script>
