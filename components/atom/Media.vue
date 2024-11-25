@@ -28,8 +28,6 @@
 </template>
 
 <script setup>
-const API_URL = import.meta.env.VITE_API_ENDPOINT;
-
 const props = defineProps({
   url: {
     type: String,
@@ -62,7 +60,7 @@ function handleImageLoad() {
 }
 
 const src = computed(() => {
-  return `${API_URL}${props.url}`;
+  return props.url;
 });
 
 const isImage = computed(() => {
