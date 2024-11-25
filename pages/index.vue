@@ -1,18 +1,18 @@
 <template>
   <div>
-    <div class="mx-auto">
-      <Hero />
-      <SectionServices />
+    <div class="mx-auto relative">
+      <Hero id="hero" />
+      <SideNav></SideNav>
+
+      <SectionServices id="services" />
       <CanvasTextSlider v-gsap-appear />
       <ContentSample v-gsap-appear />
       <TechStack v-gsap-appear />
-      <!-- <Text v-gsap-appear /> -->
-
-      <Team v-gsap-appear />
-      <!--   <BlocksForm id="contact" :formBlock="formBlock" v-gsap-appear /> -->
+      <Team id="cartel" v-gsap-appear />
     </div>
   </div>
 </template>
+
 
 <script setup>
 const { data } = await fetchCollectionHandler('pages', 'index');
@@ -20,6 +20,10 @@ const { data } = await fetchCollectionHandler('pages', 'index');
 /* const formBlock = computed(() =>
   data.value.layout.find((block) => block.blockType === 'formBlock')
 ); */
+
+
 </script>
 
-<style></style>
+<style>
+
+</style>
