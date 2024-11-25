@@ -5,7 +5,8 @@
         <div ref="heroContent" class="hero-content flex flex-col w-full relative">
           <div class="relative flex justify-center text-[9rem] font-semibold transition-colors duration-300">
             <div class="relative w-fit">
-              <h2 class="before:content-['CARTELDESIGN'] before:absolute before:bottom-3 before:right-3 text-stroke">
+              <h2
+                class="before:content-['CARTELDESIGN'] before:absolute before:bottom-3 before:right-3 text-white before:text-[#01FDC6] text-stroke">
                 CARTELDESIGN</h2>
             </div>
 
@@ -30,9 +31,10 @@
       </div>
     </DefaultGrid>
     <!--     <div class="relative"> -->
-    <NuxtImg width="120" height="120" class="w-full h-24 animated-motion-2 z-20" src="/arw2.svg" />
-    <NuxtImg width="120" height="120" class="w-full h-36 animated-motion z-10" src="/arw1.svg" />
-    <NuxtImg width="120" height="120" class="w-full h-20 animated-motion-3 " src="/arw3.svg" />
+    <NuxtImg width="120" height="120" class="w-full h-24 animated-motion-2 z-30" src="/arw2.svg" />
+    <NuxtImg width="120" height="120" class="w-full h-36 animated-motion z-20" src="/arw1.svg" />
+    <NuxtImg width="120" height="120" class="w-full h-20 animated-motion-3 z-10" src="/arw3.svg" />
+    <NuxtImg width="120" height="120" class="w-full h-36 animated-motion-4 " src="/arw4.svg" />
     <!--     </div> -->
 
   </div>
@@ -141,7 +143,7 @@ onMounted(() => {
 
 
   50% {
-    transform: scale(1.2) translateY(45px);
+    transform: scale(1.2) translateY(43px);
     opacity: 1;
   }
 
@@ -180,6 +182,36 @@ onMounted(() => {
   }
 }
 
+@keyframes motion-4 {
+  0% {
+    transform: scale(1) translateY(-190px) translateX(20px);
+    opacity: 1;
+  }
+
+  40% {
+    transform: scale(1.2) translateY(-223px) translateX(20px);
+    opacity: 1;
+  }
+
+
+  50% {
+    transform: scale(1.2) translateY(-223px) translateX(20px);
+    ;
+    opacity: 1;
+  }
+
+  60% {
+    transform: scale(1.2) translateY(-223px) translateX(20px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1) translateY(-190px) translateX(20px);
+    ;
+    opacity: 1;
+  }
+}
+
 .animated-motion {
   animation-duration: 10s;
   animation-timing-function: ease;
@@ -213,6 +245,18 @@ onMounted(() => {
   animation-fill-mode: none;
   animation-play-state: running;
   animation-name: motion-3;
+  animation-iteration-count: infinite;
+}
+
+.animated-motion-4 {
+  animation-duration: 10s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: motion-4;
   animation-iteration-count: infinite;
 }
 </style>
