@@ -5,7 +5,7 @@ export const SubmissionStates = {
   error: 'error',
 };
 
-const API_URL = import.meta.env.VITE_API_ENDPOINT;
+const API_URL = import.meta.env.VITE_API_ENDPOINT + '/api';
 
 export const useSubmitForm = (formID, confirmationType, redirect) => {
   const router = useRouter();
