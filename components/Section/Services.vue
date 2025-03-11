@@ -52,6 +52,20 @@ const services = [
       'Suchmaschinenoptimierung - Mehr Sichtbarkeit im Web Unsere SEO-Strategien sorgen dafür, dass Ihre Website in den Suchmaschinen gefunden wird und Ihre Zielgruppe Sie schnell und einfach entdeckt.',
   },
   {
+    label: 'web-performance',
+    floatingTextLeft: 'Was ist das denn?',
+    floatingTextRight: 'Was bringt mir das?',
+    description:
+      'Suchmaschinenoptimierung - Mehr Sichtbarkeit im Web Unsere SEO-Strategien sorgen dafür, dass Ihre Website in den Suchmaschinen gefunden wird und Ihre Zielgruppe Sie schnell und einfach entdeckt.',
+  },
+  {
+    label: 'animation',
+    floatingTextLeft: 'Was ist das denn?',
+    floatingTextRight: 'Was bringt mir das?',
+    description:
+      'Suchmaschinenoptimierung - Mehr Sichtbarkeit im Web Unsere SEO-Strategien sorgen dafür, dass Ihre Website in den Suchmaschinen gefunden wird und Ihre Zielgruppe Sie schnell und einfach entdeckt.',
+  },
+  {
     label: 'content',
     floatingTextLeft: 'Ich bin doch kein Schriftsteller',
     floatingTextRight:

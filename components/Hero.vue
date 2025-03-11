@@ -2,42 +2,24 @@
   <div class="w-full h-screen transition-colors duration-300 flex flex-col space-between">
     <DefaultGrid class="pt-12 pb-24 w-full">
       <div class="lg:col-start-1 lg:col-end-13 relative">
-        <div ref="heroContent" class="hero-content flex flex-col w-full relative">
+        <div ref="heroContent" class="hero-content flex flex-col w-full relative z-10">
           <div class="relative flex justify-center text-[9rem] font-semibold transition-colors duration-300">
             <div class="relative w-fit">
               <h2
                 class="before:content-['CARTELDESIGN'] before:absolute before:bottom-3 before:right-3 text-white before:text-[#01FDC6] text-stroke">
                 CARTELDESIGN</h2>
             </div>
-
-
-            <!-- <h1
-          class="absolute inset-0"
-          :style="{
-              transform: `translate(${mouse.x * 0.02}px, ${mouse.y * 0.02}px)`,
-              }"
-              >
-              CARTEL DESIGN
-            </h1> -->
           </div>
-        </div>
-        <!-- <div class="text-lg my-24 italic text-center lg:text-3xl overflow-hidden w-full">
-          <h2 class="my-4 slogan-item font-light">Wachsende Businesses,</h2>
-          <h2 class="my-4 slogan-item font-light">kluge Ideen,</h2>
-          <h2 class="my-4 slogan-item font-light">komplizierte Prozesse,</h2>
-          <br />
-          <h2 class="my-4 slogan-item">brauchen DIGITALE ANWENDUNGEN</h2>
-        </div> -->
+        </div>   
       </div>
     </DefaultGrid>
-    <!--     <div class="relative"> -->
-    <NuxtImg width="120" height="120" class="w-full h-24 animated-motion-2 z-30" src="/arw2.svg" />
-    <NuxtImg width="120" height="120" class="w-full h-36 animated-motion z-20" src="/arw1.svg" />
-    <NuxtImg width="120" height="120" class="w-full h-20 animated-motion-3 z-10" src="/arw3.svg" />
-    <NuxtImg width="120" height="120" class="w-full h-36 animated-motion-4 " src="/arw4.svg" />
-    <!--     </div> -->
-
+    <NuxtImg width="120" height="120" class="w-full h-24 animated-motion-2 z-40" src="/arw2.svg" />
+    <NuxtImg width="120" height="120" class="w-full h-36 animated-motion z-30" src="/arw1.svg" />
+    <NuxtImg width="120" height="120" class="w-full h-20 animated-motion-3 z-20" src="/arw3.svg" />
+    <NuxtImg width="120" height="120" class="w-full h-36 animated-motion-4 z-10" src="/arw4.svg" />
+    <GridSVG class="absolute top-0 left-1/2 transform -translate-x-1/2"></GridSVG>
   </div>
+
 </template>
 
 <script setup>
@@ -64,7 +46,6 @@ onMounted(() => {
   const element = heroContent.value;
   let targets = gsap.utils.toArray('.slogan-item');
 
-  // Set initial position to center of the screen
   gsap.set(element, {
     y: '30%',
   });

@@ -1,7 +1,8 @@
 <template>
   <div>
     <div class="mx-auto relative">
-      <Hero id="hero" />
+      <Hero class="z-20" id="hero" />
+
       <SideNav></SideNav>
 
       <SectionServices id="services" />
